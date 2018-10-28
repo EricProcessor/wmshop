@@ -1,4 +1,6 @@
 <?php
+
+
 class feedback_controller extends general_controller
 {
     public function action_feedback(){
@@ -21,9 +23,15 @@ class feedback_controller extends general_controller
 
             $feedback_model = new feedback_model();
             $verifier = $feedback_model->verifier($data);
+
+
             if(TRUE === $verifier)
             {
                 $feedback_model->create($data);
+                //提交成功之后，这儿会发送一个邮件
+                //  a email! send email address   /index.php?m=api&c=sendmail&a=post
+                //<{url m='api' c='sendmail' a='post'}>
+                $this->action_post();
                 $this->prompt('success', '提交成功', url('main', 'index'));
             }
             else
@@ -40,6 +48,36 @@ class feedback_controller extends general_controller
         }
     }
 
+    // 发送邮件的方法
+    public function action_post()
+    {
+        $user_id = 1;
+        $email = request('email', 'yinhao1205@qq.com');
+
+        if (verifier::is_required($email, TRUE) && verifier::is_email($email, TRUE)) {
+            $tpl_id = 'mail_post';
+            $limit_model = new sendmail_limit_model();
+            if ($limit_model->check_counts($tpl_id, $user_id)) {
+                $captcha = str_shuffle(random_chars(4, TRUE) . random_chars(2));
+                $_SESSION['EMAIL_AUTH']['EMAIL'] = $email;
+                $_SESSION['EMAIL_AUTH']['CAPTCHA'] = strtolower($captcha);
+                $_SESSION['EMAIL_AUTH']['EXPIRES'] = $_SERVER['REQUEST_TIME'] + 3600;
+
+                $tpl_model = new email_tpl_model();
+                if ($tpl_model->send_captcha($email, $captcha)) {
+                    $limit_model->increase($tpl_id, $user_id);
+                    $res = array('status' => 'success');
+                } else {
+                    $res = array('status' => 'error1', 'eamil' => "$email", 'msg' => 'This email send failed,please try again!');
+                }
+            } else {
+                $res = array('status' => 'error2', 'msg' => '抱歉！您今日发送该邮件次数已超上限!');
+            }
+        } else {
+            $res = array('status' => 'error3', 'msg' => '邮箱地址无效');
+        }
+        echo json_encode($res);
+    }
 
     public function action_list()
     {
