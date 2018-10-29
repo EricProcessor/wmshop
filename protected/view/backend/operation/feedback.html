@@ -60,13 +60,13 @@ function deleteFeedback(e){
         <tr>
           <th>类型</th>
           <td width="20%"><{$type_map[$rs.type]}></td>
-          <th width="110">联系手机</th>
+            <th width="110">联系邮箱</th>
           <td width="20%"><b class="c666"><{$rs.mobile}></b></td>
           <th width="110">状态</th>
           <td><font class="<{if $rs.status == 2}>green<{else}>red<{/if}>"><{$status_map[$rs.status]}></font></td>
         </tr>
         <tr>
-          <th>问题描述</th>
+            <th>描述</th>
           <td colspan="5"><div class="as-srow lh150"><{$rs.content}></div></td>
         </tr>
       </table>
