@@ -28,15 +28,15 @@ return array
         //     '账户日志' => 'c=user_account_log&a=index',
         // ),
         
-        // '运营管理' => array
-        // (
-        //     '咨询反馈' => 'c=feedback&a=index',
-        //     '售后服务' => 'c=aftersales&a=index',
-        //     '订单统计' => 'c=stats&a=order',
-        //     '营收统计' => 'c=stats&a=revenue',
-        //     '访问统计' => 'c=stats&a=visitor',
-        //     '友情链接' => 'c=friendlink&a=index',
-        // ),
+        '运营管理' => array
+        (
+            '咨询反馈' => 'c=feedback&a=index',
+            '售后服务' => 'c=aftersales&a=index',
+            '订单统计' => 'c=stats&a=order',
+            '营收统计' => 'c=stats&a=revenue',
+            '访问统计' => 'c=stats&a=visitor',
+            '友情链接' => 'c=friendlink&a=index',
+        ),
         
         '广告管理' => array
         (
