@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e8e8315-fd6e-4938-8170-911b36b0fe89" name="默认的" comment="增加">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/api/sendmail_controller.php" afterPath="$PROJECT_DIR$/protected/controller/api/sendmail_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/feedback_controller.php" afterPath="$PROJECT_DIR$/protected/controller/feedback_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/resources/timer.txt" afterPath="$PROJECT_DIR$/protected/resources/timer.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/backend/operation/feedback.html" afterPath="$PROJECT_DIR$/protected/view/backend/operation/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/backend/panel.html" afterPath="$PROJECT_DIR$/protected/view/backend/panel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/feedback.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/feedback.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="panel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/backend/panel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendmail_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/api/sendmail_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1775">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding>
+                <marker date="1540815347553" expanded="true" signature="58:2574" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/feedback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <marker date="1540815347587" expanded="true" signature="1596:4755" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="1742:1842" ph="..." />
+                <marker date="1540815347587" expanded="false" signature="1802:1806" ph="&gt;" />
+                <marker date="1540815347587" expanded="true" signature="1891:4573" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="1920:4517" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="1974:4484" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2001:4469" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2127:4450" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2171:4426" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2228:4399" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2320:4368" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2357:2558" ph="..." />
+                <marker date="1540815347587" expanded="false" signature="2603:2616" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2617:3620" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2709:3582" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="2768:3540" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="3657:3863" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="3900:4088" ph="..." />
+                <marker date="1540815347587" expanded="true" signature="4125:4331" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/feedback_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <marker date="1540815351099" expanded="true" signature="3156:6836" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="3191:3735" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="3328:3565" ph="..." />
+                <marker date="1540815351099" expanded="true" signature="3774:4533" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="4003:4456" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="4469:4527" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="4573:5789" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="4659:5523" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="4709:5102" ph="..." />
+                <marker date="1540815351099" expanded="true" signature="5266:5417" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="5434:5513" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="5536:5783" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="5833:6834" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="6065:6757" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="6115:6298" ph="..." />
+                <marker date="1540815351099" expanded="true" signature="6476:6651" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="6668:6747" ph="{...}" />
+                <marker date="1540815351099" expanded="true" signature="6770:6828" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/model/feedback_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/backend/feedback_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1540730080209" expanded="true" signature="801:866" ph="SELECT COUNT... " />
+                <marker date="1540730080209" expanded="true" signature="1086:1452" ph="SELECT a.fb_... $" />
+                <marker date="1540730080209" expanded="true" signature="2754:3011" ph="SELECT a.*, $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feedback_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="friendlink.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/friendlink.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yinhao123 &lt;yinhao1205@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/protected/view/backend/panel.html" />
+        <option value="$PROJECT_DIR$/protected/controller/api/sendmail_controller.php" />
+        <option value="$PROJECT_DIR$/protected/view/frontend/default/feedback.html" />
+        <option value="$PROJECT_DIR$/protected/controller/feedback_controller.php" />
+        <option value="$PROJECT_DIR$/protected/view/backend/operation/feedback.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="D:/ThinkphpDEMO" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e8e8315-fd6e-4938-8170-911b36b0fe89" name="默认的" comment="" />
+      <created>1540730169016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540730169016</updated>
+      <workItem from="1540730173042" duration="6993000" />
+      <workItem from="1540814484688" duration="1789000" />
+    </task>
+    <task id="LOCAL-00001" summary="去掉后台页脚版权">
+      <created>1540730825648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540730825648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="在咨询的地方提交后 增加邮件发送的功能">
+      <created>1540743054087</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540743054087</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改后台咨询页面手机字段">
+      <created>1540743253594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540743253594</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8782000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28721684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="去掉后台页脚版权" />
+    <MESSAGE value="在咨询的地方提交后 增加邮件发送的功能" />
+    <MESSAGE value="修改后台咨询页面手机字段" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改后台咨询页面手机字段" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/api/sendmail_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+          <folding>
+            <marker date="1540815347553" expanded="true" signature="58:2574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1540815347587" expanded="true" signature="1596:4755" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1742:1842" ph="..." />
+            <marker date="1540815347587" expanded="false" signature="1802:1806" ph="&gt;" />
+            <marker date="1540815347587" expanded="true" signature="1891:4573" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1920:4517" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1974:4484" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2001:4469" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2127:4450" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2171:4426" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2228:4399" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2320:4368" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2357:2558" ph="..." />
+            <marker date="1540815347587" expanded="false" signature="2603:2616" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2617:3620" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2709:3582" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2768:3540" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="3657:3863" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="3900:4088" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="4125:4331" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/feedback_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <marker date="1540815351099" expanded="true" signature="3156:6836" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="3191:3735" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="3328:3565" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="3774:4533" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4003:4456" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4469:4527" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4573:5789" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4659:5523" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4709:5102" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="5266:5417" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5434:5513" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5536:5783" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5833:6834" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6065:6757" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6115:6298" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="6476:6651" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6668:6747" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6770:6828" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/model/feedback_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/backend/feedback_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1540730080209" expanded="true" signature="801:866" ph="SELECT COUNT... " />
+            <marker date="1540730080209" expanded="true" signature="1086:1452" ph="SELECT a.fb_... $" />
+            <marker date="1540730080209" expanded="true" signature="2754:3011" ph="SELECT a.*, $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/friendlink.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/feedback_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1540815351099" expanded="true" signature="3156:6836" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="3191:3735" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="3328:3565" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="3774:4533" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4003:4456" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4469:4527" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4573:5789" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4659:5523" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="4709:5102" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="5266:5417" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5434:5513" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5536:5783" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="5833:6834" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6065:6757" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6115:6298" ph="..." />
+            <marker date="1540815351099" expanded="true" signature="6476:6651" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6668:6747" ph="{...}" />
+            <marker date="1540815351099" expanded="true" signature="6770:6828" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1540815347587" expanded="true" signature="1596:4755" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1742:1842" ph="..." />
+            <marker date="1540815347587" expanded="false" signature="1802:1806" ph="&gt;" />
+            <marker date="1540815347587" expanded="true" signature="1891:4573" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1920:4517" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="1974:4484" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2001:4469" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2127:4450" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2171:4426" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2228:4399" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2320:4368" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2357:2558" ph="..." />
+            <marker date="1540815347587" expanded="false" signature="2603:2616" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2617:3620" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2709:3582" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="2768:3540" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="3657:3863" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="3900:4088" ph="..." />
+            <marker date="1540815347587" expanded="true" signature="4125:4331" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/api/sendmail_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <marker date="1540815347553" expanded="true" signature="58:2574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/model/feedback_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/backend/feedback_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1540730080209" expanded="true" signature="801:866" ph="SELECT COUNT... " />
+            <marker date="1540730080209" expanded="true" signature="1086:1452" ph="SELECT a.fb_... $" />
+            <marker date="1540730080209" expanded="true" signature="2754:3011" ph="SELECT a.*, $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/friendlink.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/backend/operation/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
