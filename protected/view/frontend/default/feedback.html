@@ -14,7 +14,7 @@
             var form = $(e).closest('form');
             form.find('input[name="subject"]').vdsFieldChecker({rules:{required:[true, 'The theme should not be empty.'], maxlen:[120, 'The theme is within 120 characters.']}});
             form.find('textarea[name="content"]').vdsFieldChecker({rules:{required:[true, 'Content can not be empty.'], minlen:[15, 'Content should not be less than 15 characters.'], maxlen:[500, 'The content should not exceed 500 characters.']}, tipsPos:'abs'});
-            form.find('input[name="email"]').vdsFieldChecker({rules:{required:[true, 'E-mail must be filled.'], email:[true, 'Please fill in a valid email address.']}});
+            form.find('input[name="moblie"]').vdsFieldChecker({rules:{required:[true, 'E-mail must be filled.'], email:[true, 'Please fill in a valid email address.']}});
             form.vdsFormChecker();
         }
     </script>
@@ -63,7 +63,7 @@
                                 </tr>
                                 <tr>
                                     <th>E-mail：</th>
-                                    <td><input class="w150 txt" name="email" type="text" /></td>
+                                    <td><input class="w150 txt" name="mobile" type="text" /></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"><div class="ptform-btn"><button type="button" class="sm-blue" onclick="submitPost(this)">Submit</button></div></td>

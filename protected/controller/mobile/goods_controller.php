@@ -69,5 +69,10 @@ class goods_controller extends general_controller
             jump(url('mobile/main', '404'));
         }
     }
+    public function action_company(){
+
+        $this->compiler('company.html');
+
+    }
 
 }
