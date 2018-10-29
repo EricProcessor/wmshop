@@ -30,12 +30,12 @@ return array
         
         '运营管理' => array
         (
-            '咨询反馈' => 'c=feedback&a=index',
-            '售后服务' => 'c=aftersales&a=index',
-            '订单统计' => 'c=stats&a=order',
-            '营收统计' => 'c=stats&a=revenue',
-            '访问统计' => 'c=stats&a=visitor',
-            '友情链接' => 'c=friendlink&a=index',
+            '咨询信息' => 'c=feedback&a=index',
+//            '售后服务' => 'c=aftersales&a=index',
+//            '订单统计' => 'c=stats&a=order',
+//            '营收统计' => 'c=stats&a=revenue',
+//            '访问统计' => 'c=stats&a=visitor',
+//            '友情链接' => 'c=friendlink&a=index',
         ),
         
         '广告管理' => array
@@ -68,19 +68,19 @@ return array
             '角色列表' => 'c=role&a=index',
         ),
 
-        // '系统配置' => array
-        // (
-        //     '系统设置' => 'c=setting&a=index',
-        //     '导航设置' => 'c=nav&a=index',
-        //     '配送方式' => 'c=shipping_method&a=index',
-        //     '支付方式' => 'c=payment_method&a=index',
-        //     '物流承运商' => 'c=shipping_carrier&a=index',
-        // ),
+         '系统配置' => array
+         (
+             '系统设置' => 'c=setting&a=index',
+             '导航设置' => 'c=nav&a=index',
+//             '配送方式' => 'c=shipping_method&a=index',
+//             '支付方式' => 'c=payment_method&a=index',
+//             '物流承运商' => 'c=shipping_carrier&a=index',
+         ),
         
-        '系统应用' => array
-        (
-            '授权登录' => 'c=oauth&a=index',
-        ),
+//        '系统应用' => array
+//        (
+//            '授权登录' => 'c=oauth&a=index',
+//        ),
         
         '系统工具' => array
         (

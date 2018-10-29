@@ -92,14 +92,14 @@ function submitForm(){
             <th>商品货号</th>
             <td><input class="w200 txt" name="goods_sn" type="text" /><p class="c999 mt10">长度不应超过20个字符, 留空则系统会按约定规则自动生成货号</p></td>
           </tr>
-          <tr>
+          <tr style="display: none">
             <th>当前售价</th>
-            <td><input class="w200 txt" name="now_price" id="now_price" type="text" /><p class="c999 mt10">售价请按此格式填写, 如: "188.00" 或 "8.00"</p></td>
+            <td><input class="w200 txt" name="now_price" id="now_price" type="text" value="1.00" /><p class="c999 mt10">售价请按此格式填写, 如: "188.00" 或 "8.00"</p></td>
           </tr>
-          <tr>
+          <tr style="display: none">
             <th>原售价</th>
             <td>
-              <input class="w200 txt" name="original_price" id="original_price" type="text" />
+              <input class="w200 txt" name="original_price" id="original_price"  value="1.00" type="text" />
               <p class="c999 mt10">留空或为0时，前台不显示原售价</p>
             </td>
           </tr>
