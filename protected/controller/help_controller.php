@@ -15,4 +15,5 @@ class help_controller extends general_controller
             jump(url('main', '404'));
         }
     }
+
 }

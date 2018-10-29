@@ -38,4 +38,9 @@ class goods_controller extends general_controller
             jump(url('main', '404'));
         }
     }
+    public function action_company(){
+
+        $this->compiler('company.html');
+
+    }
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="verydows-baseurl" content="<{$common.baseurl}>">
+<meta name="keywords" content="Qingdao Instar International Trade Co., LTD" />
+<meta name="description" content="Qingdao Instar International Trade Co., LTD" />
+<title>Qingdao Instar International Trade Co., LTD</title>
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/general.css" />
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/goods.css" />
+<script type="text/javascript" src="<{$common.baseurl}>/public/script/jquery.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/jquery.zoom.min.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/general.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/goods.js"></script>
+<script type="text/javascript">
+
+
+
+
+function reviewPageTurn(page_id){showReviewList(page_id);}
+function reviewPageJump(e){showReviewList($(e).prev('input').val())}
+</script>
+</head>
+<body>
+<!-- 顶部开始 -->
+<{layout_topper common=$common}>
+<!-- 顶部结束 -->
+<!-- 头部开始 -->
+<{layout_header common=$common}>
+<!-- 头部结束 -->
+
+<!-- 主体开始 -->
+<div >
+  <div>
+      <p>Qingdao Instar International Trade Co., LTD is a professional supplier of sublimation products.</p>
+    Our company supplied many different kinds of sublimation products, include the sublimation ceramic mugs, sublimation stainsteel steel water bottles, sublimation glasses, sublimation phone covers, and so on. And we develop another industrial wooden products, such as wooden wine box,wooden photo frame, wooden packages and many different wooden craft.
+
+    In recent years, our products are selling well all over the world, especiall in Europe and America, south America and south east Asia. We always adhere to the principle of equality and matual benefit, so we won good reputation and favour because of our superior quality,honest dealing,best after-sales service and competitive price in the domestic and overseas.
+
+    We welcome different countries import and export enterprises to contact us for business warmly.
+    We sincerely hope we will build up business relationship with you in future.
+    We expect your coming!
+  </div>
+</div>
+<!-- 主体结束 -->
+<div class="cl"></div>
+<!-- 页脚开始 -->
+<{layout_footer}>
+<!-- 页脚结束 -->
+<!-- 评价模板开始 -->
+<script type="text/template" id="review-tpl">
+{@each list as v}
+<dl>
+  <dt><div class="avatar">{@if v.avatar != ''}<img width="60" height="60" src="<{$common.baseurl}>/upload/user/avatar/${v.avatar}" />{@else}<i class="icon"></i>{@/if}</div><div class="uname">${v.username}</div></dt>
+  <dd>
+    <div><span class="rating s_${v.rating}"></span><font>${v.satisficing}</font></div>
+    <p class="mt10 c666">${v.content}</p>
+    <p class="mt8 caaa aln-r">${v.created_date}</p>
+  </dd>
+  {@if v.replied != ''}
+  <dd class="replied mt10">
+    <p class="c666"><strong>客服回复：</strong>${v.replied.content}</p>
+    <p class="mt5 caaa aln-r">${v.replied.dateline}</p>
+  </dd>
+  {@/if}
+</dl>
+{@/each}
+</script>
+<!-- 评价模板结束 -->
+<!-- 评价翻页模板开始 -->
+<script type="text/template" id="review-paging-tpl">
+<div class="module aln-r cut">
+  <div class="paging small">
+    {@if paging.first_page == paging.current_page}<span class="disabled">上一页</span>{@else}<a onclick="reviewPageTurn(${paging.prev_page})">上一页</a>{@/if}
+    {@each paging.all_pages as v}
+    {@if paging.current_page == v}<span class="cur">${paging.current_page}</span>{@else}<a onclick="reviewPageTurn(${v})">${v}</a>{@/if}
+    {@/each}
+    {@if paging.last_page == paging.current_page}<span class="disabled">下一页</span>{@else}<a onclick="reviewPageTurn(${paging.next_page})">下一页</a>{@/if}
+    <span class="tot">共<b>${paging.total_page}</b>页</span>
+    <span class="jump">转到第<input type="text" value="${paging.current_page}" />页<button type="button" onclick="reviewPageJump(this)">确 定</button></span>
+  </div>
+</div>
+</script>
+<!-- 评价翻页模板结束 -->
+<!-- 加入购物车对话框开始 -->
+<div class="tocart-dialog cut" id="tocart-dialog">
+  <p><i class="icon"></i><font class="ml10"></font></p>
+  <div class="mt20"><a class="sm-green" href="<{url c='cart' a='index'}>">结算付款</a><a class="sm-gray" onclick="cancelTocartDialog()">继续购物</a></div>
+  <a class="c999" onclick="cancelTocartDialog()">×</a>
+</div>
+<!-- 加入购物车对话框结束 -->
+<!-- 用户登陆框开始 -->
+<{layout_login common=$common}>
+<!-- 用户登陆框结束 -->
+<script type="text/javascript" src="<{$common.baseurl}>/public/script/juicer.js"></script>
+</body>
+</html>
