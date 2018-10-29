@@ -78,14 +78,14 @@ $(function(){
       </div>
     </div>
     <!-- 系统信息结束 -->
-    <div class="bw-row mt5 pad10 cut">
+    <div style="display: none" class="bw-row mt5 pad10 cut">
       <table class="dataform declare">
         <tr><td colspan="4"><h3 class="ta-c caaa">Verydows Group</h3></td></tr>
         <tr>
-          <th width="16%">官方网站 (Official Site)</th>
-          <td width="30%"><a href="http://www.verydows.com/">www.verydows.com</a></td>
+          <th width="16%">网站 (Official Site)</th>
+          <td width="30%"><a href="http://www.qd-instar.com/">www.qd-instar.com</a></td>
           <th width="15%">设计与开发 (R&D)</th>
-          <td>Cigery</td>
+          <td>Eric & Yin</td>
         </tr>
         <tr>
           <th>感谢贡献者 (Contributor)</th>
@@ -94,10 +94,10 @@ $(function(){
         <tr>
           <th>相关连接 (Related Links)</th>
           <td colspan="3">
-            <a href="http://www.verydows.com/manual/starting.html" target="_blank">文档</a><span class="sep20"></span>
-	    <a href="http://www.verydows.com/download/index.html" target="_blank">下载</a><span class="sep20"></span>
-            <a href="http://www.speedphp.com/" target="_blank">框架(Speed)</a><span class="sep20"></span>
-            <a href="http://bbs.verydows.com/" target="_blank">讨论</a>
+            <a href="#" target="_blank">文档</a><span class="sep20"></span>
+	    <a href="#" target="_blank">下载</a><span class="sep20"></span>
+            <a href="#" target="_blank">框架(Speed)</a><span class="sep20"></span>
+            <a href="#" target="_blank">讨论</a>
           </td>
         </tr>
       </table>
@@ -107,7 +107,7 @@ $(function(){
 <script type="text/template" id="totals-tpl">
   <table class="stbl">
     <tr><th width="100">订单总数</th><td><b>${order}</b>个</td></tr>
-    <tr><th>总营收额</th><td><b>{@if revenue != null}${revenue}{@else}0.00{@/if}</b>元</td></tr>
+    <tr style="display: none"><th>总营收额</th><td><b>{@if revenue != null}${revenue}{@else}0.00{@/if}</b>元</td></tr>
     <tr><th>注册用户</th><td><b>${user}</b>个</td></tr>
     <tr><th>商品总数</th><td><b>${goods}</b>个</td></tr>
     <tr><th>广告总数</th><td><b>${adv}</b>条</td></tr>
@@ -117,19 +117,19 @@ $(function(){
 <script type="text/template" id="today-tpl">
   <table class="stbl">
     <tr><th width="100">订单数量</th><td><b>${order}</b>个</td></tr>
-    <tr><th>今日营收</th><td><b>{@if revenue != null}${revenue}{@else}0.00{@/if}</b>元</td></tr>
+    <tr style="display: none"><th>今日营收</th><td><b>{@if revenue != null}${revenue}{@else}0.00{@/if}</b>元</td></tr>
     <tr><th>新注册用户</th><td><b>${user}</b>个</td></tr>
-    <tr><th>售后申请</th><td><b>${aftersales}</b>个</td></tr>
-    <tr><th>咨询反馈</th><td><b>${feedback}</b>条</td></tr>
+    <tr style="display: none"><th>售后申请</th><td><b>${aftersales}</b>个</td></tr>
+    <tr><th>咨询邮件</th><td><b>${feedback}</b>条</td></tr>
     <tr><th>今日浏览量</th><td>{@if pv == '-1'}<font class="mr5 c999">访问统计关闭</font>{@else if pv == null}<b>0</b>次{@else}<b>${pv}</b>次{@/if}</td></tr>
   </table>
 </script>
 <script type="text/template" id="pending-tpl">
   <table class="stbl">
-    <tr><th width="100">待发货订单</th><td><b>${order}</b>个</td></tr>
-    <tr><th>待处理售后</th><td><b>${aftersales}</b>个</td></tr>
-    <tr><th>待审核评价</th><td><b>${review}</b>条</td></tr>
-    <tr><th>待回复反馈</th><td><b>${feedback}</b>个</td></tr>
+    <tr ><th width="100">待发货</th><td><b>${order}</b>个</td></tr>
+    <tr style="display: none"><th>待处理售后</th><td><b>${aftersales}</b>个</td></tr>
+    <tr style="display: none"><th>待审核评价</th><td><b>${review}</b>条</td></tr>
+    <tr ><th>待回复反馈</th><td><b>${feedback}</b>个</td></tr>
     <tr><th>到期广告</th><td><b>${adv}</b>条</td></tr>
     <tr><th>待确认订阅</th><td><b>${subscription}</b>个</td></tr>
   </table>
@@ -138,7 +138,7 @@ $(function(){
   <table class="dataform">
     <tr>
       <th width="13%">程序版本</th>
-      <td width="33%">${vds_version}</td>
+      <td width="33%">QingDao Instar v1.0</td>
       <th width="13%">服务器 IP</th>
       <td>${server_ip}</td>
     </tr>
