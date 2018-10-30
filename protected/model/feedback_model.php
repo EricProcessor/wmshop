@@ -22,7 +22,7 @@ class feedback_model extends Model
         ),
         'mobile' => array
         (
-            'is_required' => array(TRUE, '手机号码不能为空'),
+            'is_required' => array(TRUE, 'This is a error, please try again!'),
           //  'is_moblie_no' => array(TRUE, '请填写一个有效的手机号码'),
         ),
     );

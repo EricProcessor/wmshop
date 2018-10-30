@@ -26,7 +26,7 @@ class feedback_controller extends general_controller
             'type' => (int)request('type', 0, 'post'),
             'subject' => strip_tags(trim(request('subject', '', 'post'))),
             'content' => strip_tags(trim(request('content', '', 'post'))),
-            'mobile' => trim(request('mobile', '', 'post')),
+            'mobile' => trim(request('email', '', 'post')),
             'created_date' => $_SERVER['REQUEST_TIME'],
         );
         
@@ -40,7 +40,7 @@ class feedback_controller extends general_controller
             }
             else
             {
-                $res = array('status' => 'error', '保存失败,请稍后重试');
+                $res = array('status' => 'error', 'Save failed,please try again.');
             }
         }
         else
