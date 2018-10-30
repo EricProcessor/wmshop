@@ -112,6 +112,12 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
     <div class="gtbox cut">
       <h1><{$goods.goods_name}></h1>
       <p class="mt8 c888"><{$goods.goods_brief nofilter}></p>
+      <div class="gatt module mt10 cut">
+          <dl>
+              <dt>Product code:</dt>
+              <dd><{$goods.goods_sn}></dd>
+            </dl>  
+      </div>
       <!-- <div class="gatt module mt10 cut">
         <dl>
           <dt>商品货号:</dt>
@@ -140,7 +146,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
         <{foreach $opt_list as $v}>
         <dl class="mt15">
           <dt><{$v.type_name}>:</dt>
-          <dd class="opt" data-checked=""> <{foreach $v.children as $vv}> <a data-key="<{$vv.id}>" data-price="<{$vv.opt_price}>"><{$vv.opt_text}></a> <{/foreach}> </dd>
+          <dd clasoks="opt" data-checked=""> <{foreach $v.children as $vv}> <a data-key="<{$vv.id}>" data-price="<{$vv.opt_price}>"><{$vv.opt_text}></a> <{/foreach}> </dd>
         </dl>
         <{/foreach}>
         <{/if}>
@@ -155,6 +161,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
         </form>
       </div>
       <!-- <div class="buy mt30"><a class="add-cart icon" onclick="addToCart(this, '<{$goods.goods_id}>')">加入购物车</a><a class="buy-now icon" onclick="toBuy('<{$goods.goods_id}>', '<{url c='cart' a='index'}>')">立即购买</a></div> -->
+      <div class="buy mt30"><a href="<{url c='feedback' a= 'feedback' code = $goods.goods_sn}>" style="display: inline-block;padding:10px 40px;background-color:#ffb03f;color: #fff;cursor: pointer;text-decoration: none;" onclick="">Send E-mail</a></div>
 
     </div>
   </div>

@@ -127,7 +127,7 @@ input.variseclear:valid + i.vinclrbtn {display:inline;}
 /* 菜单导航 */
 .absmu {width:100%;height:50px;background:#f6f6f6;overflow:hidden}
 .absmu.footnav, .footfixed {position:fixed;width:100%;max-width:640px;margin:0 auto;bottom:0;border-top:1px solid #d5d5d5;}
-.absmu a {display:block;position:relative;float:left;width:25%;text-align:center;padding:5px 0;}
+.absmu a {display:block;position:relative;float:left;width:33%;text-align:center;padding:5px 0;}
 .absmu a i {display:block;font-size:22px;line-height:22px;color:#909092;overflow:hidden}
 .absmu a span {display:block;margin-top:3px;color:#999;}
 .absmu a.cur i {color:#339999}

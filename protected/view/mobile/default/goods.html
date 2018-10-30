@@ -166,7 +166,7 @@ function addFavorite(goods_id){
     <a href="javascript:void(0)" onclick="addFavorite('<{$goods.goods_id}>')"><i class="iconfont">&#xe605;</i><span>收藏</span></a>
     <a id="cartbar" href="<{url c='mobile/cart' a='index'}>"><i class="iconfont">&#xe603;</i><span>购物车</span><em class="hide">0</em></a>
   </div> -->
-  <div class="bact cut"><a class="add" id="addcartbtn" onclick="addToCart('<{$goods.goods_id}>')">加入购物车</a><a class="buy" onclick="toBuy('<{$goods.goods_id}>', '<{url c='mobile/feedback' a='support'}>')">Info</a></div>
+  <div class="bact cut"><a class="buy" onclick="toBuy('<{$goods.goods_id}>', '<{url c='mobile/feedback' a='support'}>')">E-mail</a></div>
 </div>
 <{include file='mobile/default/lib/footer.html'}>
 </body>

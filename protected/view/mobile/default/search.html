@@ -35,25 +35,25 @@ var searchApi = "<{url c='api/goods' a='search'}>";
     <{if !empty($goods_list)}>
     <ul class="sortby">
       <{if $u.sort == 0}>
-      <li class="cur"><a>默认</a></li>
+      <li class="cur"><a>Default</a></li>
       <{else}>
-      <li><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw}>">默认</a></li>
+      <li><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw}>">Default</a></li>
       <{/if}>
-      <{if $u.sort == 1}>
+      <!-- <{if $u.sort == 1}>
       <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='2'}>">价格<i class="arrow iconfont">&#xe63c;</i></a></li>
       <{elseif $u.sort == 2}>
       <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='1'}>">价格<i class="arrow iconfont">&#xe63b;</i></a></li>
       <{else}>
       <li><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='1'}>">价格</a></li>
-      <{/if}>
+      <{/if}> -->
       <{if $u.sort == 3}>
-      <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='4'}>">时间<i class="arrow iconfont">&#xe63c;</i></a></li>
+      <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='4'}>">Time<i class="arrow iconfont">&#xe63c;</i></a></li>
       <{elseif $u.sort == 4}>
-      <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='3'}>">时间<i class="arrow iconfont">&#xe63b;</i></a></li>
+      <li class="cur"><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='3'}>">Time<i class="arrow iconfont">&#xe63b;</i></a></li>
       <{else}>
-      <li><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='3'}>">时间</a></li>
+      <li><a href="<{url c='mobile/search' a='index' cate=$u.cate brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort='3'}>">Time</a></li>
       <{/if}>
-      <li onclick="showFilters()"><a>筛选</a></li>
+      <!-- <li onclick="showFilters()"><a>筛选</a></li> -->
     </ul>
     <div class="srli" id="srli" data-cur='1' data-next='2'>
       <{foreach $goods_list as $v}>
@@ -62,7 +62,7 @@ var searchApi = "<{url c='api/goods' a='search'}>";
         <div class="gin">
           <a class="gn" href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><{$v.goods_name}></a>
           <div class="st mt5 mustrcut"><{$v.goods_brief nofilter}></div>
-          <p class="pri mt5"><i class="cny">¥</i><font class="f14"></font></p>
+          <!-- <p class="pri mt5"><i class="cny">¥</i><font class="f14"></font></p> -->
         </div>
       </div>
       <{/foreach}>
