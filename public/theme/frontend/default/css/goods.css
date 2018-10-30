@@ -22,7 +22,7 @@
 .gtbox {margin-left:380px;}
 .gtbox h1 {font-size:18px;font-family:"微软雅黑",tahoma;line-height:150%;color:#2D415A;}
 .gatt dl {display:block;}
-.gatt dl dt {float:left;width:60px;height:30px;line-height:30px;color:#888;text-align:justify;text-justify:inter-ideograph;overflow:hidden}
+.gatt dl dt {float:left;width:90px;height:30px;line-height:30px;color:#888;text-align:justify;text-justify:inter-ideograph;overflow:hidden}
 .gatt dl dt span.sep-24 {font-size:0;margin:0 12px;}
 .gatt dl dd {margin-left:65px;line-height:30px;color:#555;}
 .gatt dl dd.opri {font-size:14px;text-decoration:line-through;color:#999;}

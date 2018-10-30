@@ -128,7 +128,7 @@ function addFavorite(goods_id){
             <li>
               <div class="im"><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/100x100/<{$v.goods_image}>" /></a></div>
               <h3 class="mustrcut"><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><{$v.goods_name}></a></h3>
-              <p class="price"><i>¥</i><{$v.now_price}></p>
+              <!-- <p class="price"><i>¥</i><{$v.now_price}></p> -->
             </li>
             <{/foreach}>
           </ul>
@@ -150,7 +150,7 @@ function addFavorite(goods_id){
               <div class="im"><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/100x100/<{$v.goods_image}>" /></a></div>
               <h3 class="mustrcut"><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><{$v.goods_name}></a></h3>
               <p class="sold">已售出<b><{$v.count}></b>件</p>
-              <p class="price"><i>¥</i><{$v.now_price}></p>
+              <!-- <p class="price"><i>¥</i><{$v.now_price}></p> -->
             </li>
             <{/foreach}>
           </ul>
@@ -166,7 +166,7 @@ function addFavorite(goods_id){
     <a href="javascript:void(0)" onclick="addFavorite('<{$goods.goods_id}>')"><i class="iconfont">&#xe605;</i><span>收藏</span></a>
     <a id="cartbar" href="<{url c='mobile/cart' a='index'}>"><i class="iconfont">&#xe603;</i><span>购物车</span><em class="hide">0</em></a>
   </div> -->
-  <div class="bact cut"><a class="add" id="addcartbtn" onclick="addToCart('<{$goods.goods_id}>')">加入购物车</a><a class="buy" onclick="toBuy('<{$goods.goods_id}>', '<{url c='mobile/feedback' a='support'}>')">Info</a></div>
+  <div class="bact cut"><a class="buy" onclick="toBuy('<{$goods.goods_id}>', '<{url c='mobile/feedback' a='support'}>')">E-mail</a></div>
 </div>
 <{include file='mobile/default/lib/footer.html'}>
 </body>

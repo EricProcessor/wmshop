@@ -45,7 +45,7 @@ function deleteMultFav(){
 <{layout_header common=$common}>
 <!-- 头部结束 -->
 <div class="loc w1100">
-  <div><a href="<{url c='main' a='index'}>">网站首页</a><b>&gt;</b><font>我的收藏</font></div>
+  <div><a href="<{url c='main' a='index'}>">Home</a><b>&gt;</b><font>我的收藏</font></div>
 </div>
 <!-- 主体开始 -->
 <div class="container w1100 mt10">
@@ -77,7 +77,7 @@ function deleteMultFav(){
                   <td><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img src="<{$common.baseurl}>/upload/goods/prime/50x50/<{$v.goods_image}>" /></a></td>
                   <td>
                     <p class="aln-l"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><{$v.goods_name}></a></p>
-                    <p class="aln-l red mt5"><font class="cny">¥</font> <{$v.now_price}></p>
+                    <!-- <p class="aln-l red mt5"><font class="cny">¥</font> <{$v.now_price}></p> -->
                   </td>
                   <td>
                     <{date('Y-m-d', $v.created_date)}><br />

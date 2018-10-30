@@ -21,6 +21,23 @@ function reviewPageTurn(page_id){showReviewList(page_id);}
 function reviewPageJump(e){showReviewList($(e).prev('input').val())}
 </script>
 </head>
+<style>
+  .llh-intro{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .llh-comin p{
+    font-size: 20px;
+    line-height: 48px;
+    color: #1D7AD9;
+    display: inline-block;
+    border-bottom: 2px solid #1d7ad9;
+  }
+  .llh-comin{
+    padding-bottom: 20px;
+  }
+</style>
 <body>
 <!-- 顶部开始 -->
 <{layout_topper common=$common}>
@@ -30,16 +47,23 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
 <!-- 头部结束 -->
 
 <!-- 主体开始 -->
-<div >
-  <div>
-      <p>Qingdao Instar International Trade Co., LTD is a professional supplier of sublimation products.</p>
-    Our company supplied many different kinds of sublimation products, include the sublimation ceramic mugs, sublimation stainsteel steel water bottles, sublimation glasses, sublimation phone covers, and so on. And we develop another industrial wooden products, such as wooden wine box,wooden photo frame, wooden packages and many different wooden craft.
-
-    In recent years, our products are selling well all over the world, especiall in Europe and America, south America and south east Asia. We always adhere to the principle of equality and matual benefit, so we won good reputation and favour because of our superior quality,honest dealing,best after-sales service and competitive price in the domestic and overseas.
-
-    We welcome different countries import and export enterprises to contact us for business warmly.
-    We sincerely hope we will build up business relationship with you in future.
-    We expect your coming!
+<div style="background-color: #f1f1f1">
+  <div class="container w1100" style="padding: 30px;background-color: #fff;">
+      <div class="llh-comin">
+        <p>Company Introduction</p>
+      </div>
+      <p class="llh-intro">Qingdao Instar International Trade Co., LTD is a professional supplier of sublimation products.</p>
+      <p class="llh-intro">
+          Our company supplied many different kinds of sublimation products, include the sublimation ceramic mugs, sublimation stainsteel steel water bottles, sublimation glasses, sublimation phone covers, and so on. And we develop another industrial wooden products, such as wooden wine box,wooden photo frame, wooden packages and many different wooden craft.
+          In recent years, our products are selling well all over the world, especiall in Europe and America, south America and south east Asia. We always adhere to the principle of equality and matual benefit, so we won good reputation and favour because of our superior quality,honest dealing,best after-sales service and competitive price in the domestic and overseas.
+          We welcome different countries import and export enterprises to contact us for business warmly.
+          We sincerely hope we will build up business relationship with you in future.
+          We expect your coming!
+      </p> 
+      <div class="llh-comin">
+          <p>Contact Us</p>
+      </div>
+      <p class="llh-intro">E-mail:Yony@qd-instar.com <br> Phone:+86-15953207636</p>
   </div>
 </div>
 <!-- 主体结束 -->
