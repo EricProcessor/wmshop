@@ -2,6 +2,9 @@
 class feedback_controller extends general_controller
 {
     public function action_feedback(){
+        $code = request("code", "");
+       // echo $code;
+        $this->code = $code;
         $this->compiler('feedback.html');
     }
     public function action_support(){
@@ -15,6 +18,7 @@ class feedback_controller extends general_controller
                 'subject' => trim(strip_tags(request('subject', ''))),
                 'content' => trim(strip_tags(request('content', ''))),
                 'mobile' => trim(request('email', '')),
+                'code' => request('code',''),
                 'created_date' => $_SERVER['REQUEST_TIME'],
                 'status' => 0,
             );

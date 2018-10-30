@@ -28,7 +28,7 @@ class feedback_controller extends general_controller
             if($total[0]['count'] > 0)
             {
                 $limit = $feedback_model->set_limit(array(request('page', 1), request('pernum', 15)), $total[0]['count']);
-                $sql = "SELECT a.fb_id, a.type, a.subject, a.created_date, a.status,
+                $sql = "SELECT a.fb_id, a.type, a.subject, a.created_date, a.status,a.code,a.mobile,
                                b.user_id, b.username
                         FROM {$feedback_model->table_name} AS a
                         INNER JOIN {$GLOBALS['mysql']['MYSQL_DB_TABLE_PRE']}user AS b

@@ -29,13 +29,13 @@ function pageturn(page_id){searchRes(page_id);}
 </head>
 <body>
 <div class="content">
-  <div class="loc"><h2><i class="icon"></i>咨询反馈</h2></div>
+  <div class="loc"><h2><i class="icon"></i>咨询信息</h2></div>
   <div class="box">
     <div class="doacts">
       <a class="ae btn" onclick="doslvent('<{url m=$MOD c='feedback' a='view'}>')"><i class="view"></i><font>查看详细</font></a>
       <a class="ae btn" onclick="domulent('<{url m=$MOD c='feedback' a='delete'}>')"><i class="remove"></i><font>删除</font></a>
     </div>
-    <div class="stools mt5">
+    <div style="display:none;" class="stools mt5">
       <select id="type" class="slt">
         <option value="" selected="selected">全部类型</option>
         <{foreach $type_map as $k => $v}>
@@ -59,8 +59,8 @@ function pageturn(page_id){searchRes(page_id);}
     <tr>
       <th width="60" colspan="2">编号</th>
       <th class="ta-l">主题</th>
-      <th width="150">类型</th>
-      <th width="160">用户名</th>
+      <th width="150">货号</th>
+      <th width="160">用户邮箱</th>
       <th width="130">状态</th>
       <th width="110">日期</th>
     </tr>
@@ -69,8 +69,8 @@ function pageturn(page_id){searchRes(page_id);}
       <td width="20"><input name="id[]" type="checkbox" value="${v.fb_id}" /></td>
       <td width="40">${v.fb_id}</td>
       <td class="ta-l"><a class="blue" href="<{url m=$MOD c='feedback' a='view' id='${v.fb_id}'}>">${v.subject}</a></td>
-      <td>${v.type}</td>
-      <td><a class="blue" href="<{url m=$MOD c='user' a='view' id='${v.user_id}'}>">${v.username}</a></td>
+      <td>${v.code}</td>
+      <td><a class="blue" href="<{url m=$MOD c='user' a='view' id='${v.user_id}'}>">${v.mobile}</a></td>
       <td>${v.status}</td>
       <td class="c888">${v.created_date}</td>
     </tr>

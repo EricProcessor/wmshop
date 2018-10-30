@@ -25,6 +25,9 @@ class feedback_model extends Model
             'is_required' => array(TRUE, 'This is a error, please try again!'),
           //  'is_moblie_no' => array(TRUE, '请填写一个有效的手机号码'),
         ),
+        'code' => array(
+
+        ),
     );
     
     public $addrules = array
