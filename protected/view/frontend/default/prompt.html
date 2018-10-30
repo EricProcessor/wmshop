@@ -29,14 +29,14 @@ $(function(){
 <div class="w800">
   <div class="aln-c"><a href="<{url c='main' a='index'}>"><img alt="<{$GLOBALS.cfg.site_name}>" src="<{$common.theme}>/images/logo.gif" /></a></div>
   <div class="prompt mt10">
-    <h1 class="c666">系统提示</h1>
+    <h1 class="c666">System </h1>
     <h3 class="mt20 <{$rs.type}>"><{if is_array($rs.text)}><{foreach $rs.text as $v}><{$v}><br /><{/foreach}><{else}><{$rs.text}><{/if}></h3>
     <{if $rs.redirect != 'close'}>
-    <p class="c999 mt20">您将在<font id="countdown" class="countdown" data-redirect="<{$rs.redirect nofilter}>"><{$rs.time}></font>秒后自动跳转到系统指定页面</p>
-    <p class="mt20"><a href="<{$rs.redirect nofilter}>">如果浏览器没有自动跳转，请点击这里</a></p>
+    <p class="c999 mt20">You will automatically jump to the system specific page after <font id="countdown" class="countdown" data-redirect="<{$rs.redirect nofilter}>"><{$rs.time}></font>seconds.</p>
+    <p class="mt20"><a href="<{$rs.redirect nofilter}>">If the browser does not automatically jump, please click here</a></p>
     <{else}>
-    <p class="c999 mt20">此页面将在<font id="countdown" class="countdown" data-redirect="<{$rs.redirect nofilter}>"><{$rs.time}></font>秒后自动关闭</p>
-    <p class="mt20"><a href="#" onclick="window.opener = null; window.close();">点击直接关闭</a></p>
+    <p class="c999 mt20">This page will automatically close after <font id="countdown" class="countdown" data-redirect="<{$rs.redirect nofilter}>"><{$rs.time}></font>seconds</p>
+    <p class="mt20"><a href="#" onclick="window.opener = null; window.close();">Click to close directly</a></p>
     <{/if}>
   </div>
 </div>

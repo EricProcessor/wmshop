@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <{include file='mobile/default/lib/meta.html'}>
-<title>系统提示 - <{$GLOBALS.cfg.site_name}></title>
+<title>System message - <{$GLOBALS.cfg.site_name}></title>
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/general.css" />
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/prompt.css" />
 <script type="text/javascript" src="<{$common.theme}>/js/zepto.min.js"></script>
@@ -25,17 +25,17 @@ $(function(){
 <body>
 <div class="wrapper" id="wrapper">
   <!-- header start -->
-  <div class="header"><h2>系统提示</h2></div>
+  <div class="header"><h2>System message</h2></div>
   <!-- header end -->
   <div class="sysprompt module">
     <div class="main cut">
       <i class="type-<{$rs.type}>"></i>
       <h3 class="mt20 xauto <{$rs.type}>"><{if is_array($rs.text)}><{foreach $rs.text as $v}><{$v}><br /><{/foreach}><{else}><{$rs.text}><{/if}></h3>
-      <p class="center c999 mt15">系统将在<font id="countdown" class="countdown"><{$rs.time}></font>秒后自动跳转</p>
+      <p class="center c999 mt15">The system will jump in<font id="countdown" class="countdown"><{$rs.time}></font>seconds.</p>
     </div>
     <div class="act center mt20">
-      <a href="<{url c='mobile/main' a='index'}>">返回首页</a>
-      <a href="<{$rs.redirect nofilter}>">直接跳转</a>
+      <a href="<{url c='mobile/main' a='index'}>">Home</a>
+      <a href="<{$rs.redirect nofilter}>">Direct jump</a>
     </div>
   </div>
 </div>

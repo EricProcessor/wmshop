@@ -37,9 +37,9 @@ $(function(){
         <div class="th"><h2 class="c666">Filtering in search results</h2></div>
         <{if !empty($filters.cate) && count($filters.cate) > 1}>
         <div class="ftitem cut">
-          <h4 class="fl">分类：</h4>
+          <h4 class="fl">Catagory：</h4>
           <div class="ftopt">
-            <div class="fl"><{if $u.cate == 0}><a class="cur">不限</a><{else}><a href="<{url c='search' a='index' brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">不限</a><{/if}></div>
+            <div class="fl"><{if $u.cate == 0}><a class="cur">Unlimited</a><{else}><a href="<{url c='search' a='index' brand=$u.brand minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">Unlimited</a><{/if}></div>
             <dl>
               <{foreach $filters.cate as $v}>
               <{if $u.cate == $v.cate_id}>
@@ -54,9 +54,9 @@ $(function(){
         <{/if}>
         <{if !empty($filters.brand) && count($filters.brand) > 1}>
         <div class="ftitem cut">
-          <h4 class="fl">品牌：</h4>
+          <h4 class="fl">Brand:</h4>
           <div class="ftopt">
-            <div class="fl"><{if $u.brand == 0}><a class="cur">不限</a><{else}><a href="<{url c='search' a='index' cate=$u.cate att=$u.att minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">不限</a><{/if}></div>
+            <div class="fl"><{if $u.brand == 0}><a class="cur">Unlimited</a><{else}><a href="<{url c='search' a='index' cate=$u.cate att=$u.att minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">Unlimited</a><{/if}></div>
             <dl>
               <{foreach $filters.brand as $v}>
               <{if $u.brand == $v.brand_id}>
@@ -74,7 +74,7 @@ $(function(){
         <div class="ftitem cut">
           <h4 class="fl"><{$v.name}>：</h4>
           <div class="ftopt">
-            <div class="fl"><{if $v.unlimit.checked == 1}><a class="cur">不限</a><{else}><a title="不限" href="<{url c='search' a='index' cate=$u.cate brand=$u.brand att=$v.unlimit.att minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">不限</a><{/if}></div>
+            <div class="fl"><{if $v.unlimit.checked == 1}><a class="cur">Unlimited</a><{else}><a title="不限" href="<{url c='search' a='index' cate=$u.cate brand=$u.brand att=$v.unlimit.att minpri=$u.minpri maxpri=$u.maxpri kw=$u.kw sort=$u.sort}>">不限</a><{/if}></div>
             <dl>
               <{foreach $v.opts as $vv}>	
               <{if $vv.checked == 1}>
@@ -87,9 +87,9 @@ $(function(){
         <{/if}>
         <{if !empty($filters.price)}>
         <div class="ftitem cut">
-          <h4 class="fl">价格：</h4>
+          <h4 class="fl">Price：</h4>
           <div class="ftopt">
-            <div class="fl"><{if $u.minpri == 0 && $u.maxpri == 0}><a class="cur">不限</a><{else}><a href="<{url c='search' a='index' cate=$u.cate brand=$u.brand att=$u.att kw=$u.kw sort=$u.sort}>">不限</a><{/if}></div>
+            <div class="fl"><{if $u.minpri == 0 && $u.maxpri == 0}><a class="cur">Unlimited</a><{else}><a href="<{url c='search' a='index' cate=$u.cate brand=$u.brand att=$u.att kw=$u.kw sort=$u.sort}>">Unlimited</a><{/if}></div>
             <dl>
               <{foreach $filters.price as $v}>
               <{if $u.minpri == $v.min && $u.maxpri == $v.max}>

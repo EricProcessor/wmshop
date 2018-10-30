@@ -34,8 +34,8 @@ $(function(){
     </div>
   </div>
   <div class="absmu latent hide" id="top-menus">
-    <a href="<{url c='mobile/main' a='index'}>"><i class="iconfont">&#xe606;</i><span>首页</span></a>
-    <a class="cur"><i class="iconfont">&#xe60b;</i><span>商品分类</span></a>
+    <a href="<{url c='mobile/main' a='index'}>"><i class="iconfont">&#xe606;</i><span>Home</span></a>
+    <a class="cur"><i class="iconfont">&#xe60b;</i><span>Category</span></a>
     <!-- <a href="<{url c='mobile/cart' a='index'}>"><i class="iconfont">&#xe603;</i><span>购物车</span></a>
     <a href="<{url c='mobile/user' a='index'}>"><i class="iconfont">&#xe632;</i><span>我的</span></a> -->
   </div>
@@ -50,7 +50,7 @@ $(function(){
     <div class="cate-sub" id="cate-con">
       <{foreach $cate_list as $v}>
       <dl <{if $v@first == true}>class="cur"<{/if}>>
-        <dt><a href="<{url c='mobile/search' a='index' cate=$v.cate_id}>">全部<{$v.cate_name}></a></dt>
+        <dt><a href="<{url c='mobile/search' a='index' cate=$v.cate_id}>">All <{$v.cate_name}></a></dt>
         <dd>
           <{if !empty($v.children)}>
           <{foreach $v.children as $vv}>
@@ -65,7 +65,7 @@ $(function(){
   <{else}>
   <div class="nodata">
     <div class="th"><span><i class="iconfont">&#xe60b;</i></span><div class="line"></div></div>
-    <p>暂无商品分类记录</p>
+    <p>No commodity classification record.</p>
   </div>
   <{/if}>
 </div>
