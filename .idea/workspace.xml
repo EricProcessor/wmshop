@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8e8315-fd6e-4938-8170-911b36b0fe89" name="默认的" comment="增加">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/view/frontend/default/contactus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/view/mobile/default/contactus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/api/feedback_controller.php" afterPath="$PROJECT_DIR$/protected/controller/api/feedback_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/feedback_controller.php" afterPath="$PROJECT_DIR$/protected/controller/feedback_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/main_controller.php" afterPath="$PROJECT_DIR$/protected/controller/main_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" afterPath="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/resources/timer.txt" afterPath="$PROJECT_DIR$/protected/resources/timer.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/mobile/default/index.html" afterPath="$PROJECT_DIR$/protected/view/mobile/default/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,38 +20,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="goods.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/goods.html">
+      <file leaf-file-name="feedback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/feedback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="-675">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/header.html">
+      <file leaf-file-name="contactus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/contactus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="-850">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goods_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controller/goods_controller.php">
+      <file leaf-file-name="main_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/main_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="725">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usermenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/usermenu.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/resources/backup/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -56,61 +60,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feedback_controller.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controller/api/feedback_controller.php">
+      <file leaf-file-name="main_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/mobile/main_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+            <state relative-caret-position="745">
+              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feedback_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controller/feedback_controller.php">
+      <file leaf-file-name="email_captcha.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/mail/email_captcha.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feedback_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controller/mobile/feedback_controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email_tpl_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/model/email_tpl_model.php">
+      <file leaf-file-name="contactus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/contactus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="93" column="49" lean-forward="false" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="49" />
+            <state relative-caret-position="650">
+              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sendmail_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controller/api/sendmail_controller.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="581">
+              <caret line="149" column="109" lean-forward="false" selection-start-line="149" selection-start-column="109" selection-end-line="149" selection-end-column="109" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="225">
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security_controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controller/security_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1300">
+              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -151,14 +157,12 @@
         <option value="$PROJECT_DIR$/protected/include/sys_menu.php" />
         <option value="$PROJECT_DIR$/protected/view/backend/dashboard.html" />
         <option value="$PROJECT_DIR$/protected/view/frontend/default/index.html" />
-        <option value="$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html" />
         <option value="$PROJECT_DIR$/protected/controller/general_controller.php" />
         <option value="$PROJECT_DIR$/protected/controller/help_controller.php" />
         <option value="$PROJECT_DIR$/protected/controller/goods_controller.php" />
         <option value="$PROJECT_DIR$/protected/view/frontend/default/company.html" />
         <option value="$PROJECT_DIR$/protected/controller/mobile/goods_controller.php" />
         <option value="$PROJECT_DIR$/protected/view/mobile/default/company.html" />
-        <option value="$PROJECT_DIR$/protected/view/mobile/default/index.html" />
         <option value="$PROJECT_DIR$/protected/view/mobile/default/goods.html" />
         <option value="$PROJECT_DIR$/protected/model/feedback_model.php" />
         <option value="$PROJECT_DIR$/protected/view/frontend/default/feedback.html" />
@@ -184,6 +188,12 @@
         <option value="$PROJECT_DIR$/protected/view/frontend/default/layout/header.html" />
         <option value="$PROJECT_DIR$/protected/controller/feedback_controller.php" />
         <option value="$PROJECT_DIR$/protected/controller/api/feedback_controller.php" />
+        <option value="$PROJECT_DIR$/protected/view/frontend/default/contactus.html" />
+        <option value="$PROJECT_DIR$/protected/controller/main_controller.php" />
+        <option value="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" />
+        <option value="$PROJECT_DIR$/protected/view/mobile/default/contactus.html" />
+        <option value="$PROJECT_DIR$/protected/view/mobile/default/index.html" />
+        <option value="$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html" />
       </list>
     </option>
   </component>
@@ -249,13 +259,6 @@
               <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -278,6 +281,22 @@
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -331,7 +350,7 @@
       <workItem from="1540814484688" duration="1789000" />
       <workItem from="1540816998117" duration="2151000" />
       <workItem from="1540819674145" duration="8490000" />
-      <workItem from="1540893471831" duration="9214000" />
+      <workItem from="1540893471831" duration="12430000" />
     </task>
     <task id="LOCAL-00001" summary="去掉后台页脚版权">
       <created>1540730825648</created>
@@ -358,7 +377,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28637000" />
+    <option name="totallyTimeSpent" value="31853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -404,75 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controller/main_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controller/oauth_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controller/review_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1955">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/include/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3750">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/include/core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-925">
-          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-          <folding>
-            <marker date="1540730080578" expanded="true" signature="9161:9173" ph="DELETE FROM " />
-            <marker date="1540730080578" expanded="true" signature="9516:9611" ph="INSERT INTO ${$this-&gt;table_name}... " />
-            <marker date="1540730080578" expanded="true" signature="9868:9902" ph="SELECT COUNT... ${$this-&gt;table_name}" />
-            <marker date="1540730080578" expanded="true" signature="22747:22753" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/include/area_map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1125">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/include/sys_uri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4930">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/include/sys_menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="77" column="11" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/user_info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-450">
@@ -517,14 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-305">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3350">
-          <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -737,14 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controller/goods_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -772,7 +706,7 @@
     <entry file="file://$PROJECT_DIR$/protected/controller/api/sendmail_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -804,7 +738,7 @@
     <entry file="file://$PROJECT_DIR$/protected/controller/feedback_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -813,6 +747,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/security_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1300">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/main_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/resources/backup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/mobile/main_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/mail/email_captcha.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/contactus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/mobile/default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="149" column="109" lean-forward="false" selection-start-line="149" selection-start-column="109" selection-end-line="149" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
