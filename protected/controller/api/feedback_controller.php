@@ -19,14 +19,15 @@ class feedback_controller extends general_controller
     
     public function action_save()
     {
-        $user_id = $this->is_logined();
+      //  $user_id = $this->is_logined();
         $data = array
         (
-            'user_id' => $user_id,
+            'user_id' => 1,
             'type' => (int)request('type', 0, 'post'),
             'subject' => strip_tags(trim(request('subject', '', 'post'))),
             'content' => strip_tags(trim(request('content', '', 'post'))),
             'mobile' => trim(request('email', '', 'post')),
+            'code' => trim(request('code', '', 'post')),
             'created_date' => $_SERVER['REQUEST_TIME'],
         );
         
