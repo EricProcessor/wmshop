@@ -80,7 +80,7 @@ function submitOrder(){
               <{if !empty($v.opts)}>
               <p class="opts mt5"><{foreach $v.opts as $o}><span class="mr5">[<{$o.type}>: <font><{$o.opt_text}></font>]</span><{/foreach}></p>
               <{/if}>
-              <p class="subtotal mt5 c666"><span class="price mr10"><i class="cny">¥</i><font class="f14"><{$v.now_price}></font></span>×<b class="q"><{$v.qty}></b></p>
+              <p class="subtotal mt5 c666"><span class="price mr10"><i class="cny">¥</i></span>×<b class="q"><{$v.qty}></b></p>
             </div>
           </li>
           <{/foreach}>

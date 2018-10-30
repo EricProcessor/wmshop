@@ -20,7 +20,7 @@
 <!-- 头部结束 -->
 <div class="loc w1100">
   <div>
-    <a href="<{url c='main' a='index'}>">网站首页</a>
+    <a href="<{url c='main' a='index'}>">Home</a>
     <b>&gt;</b>
     <{foreach $breadcrumbs as $v}>
     <{if $cateinfo.cate_id != $v.cate_id}><a href="<{url c='category' a='index' id=$v.cate_id}>"><{$v.cate_name}></a><b>&gt;</b><{else}><font><{$v.cate_name}></font><{/if}>
@@ -38,7 +38,7 @@
         <{foreach $recommend as $v}>
         <dl>
           <dt class="fl"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/50x50/<{$v.goods_image}>" /></a></dt>
-          <dd class="lt"><a title="<{$v.goods_name}>" href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name)}></a><p><i>¥</i> <{$v.now_price}></p></dd>
+          <dd class="lt"><a title="<{$v.goods_name}>" href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name)}></a> </p></dd>
         </dl>
         <{/foreach}>
       </div>
@@ -49,7 +49,7 @@
         <{foreach $history as $v}>
         <dl>
           <dt class="fl"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/50x50/<{$v.goods_image}>" /></a></dt>
-          <dd class="lt"><a title="<{$v.goods_name}>" href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name)}></a><p><i>¥</i> <{$v.now_price}></p></dd>
+          <dd class="lt"><a title="<{$v.goods_name}>" href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name)}></a> </p></dd>
         </dl>
         <{/foreach}>
       </div>
@@ -69,7 +69,6 @@
             <{if $v.original_price > 0}>
             <p class="ori mt10"><i>¥</i> <{$v.original_price}></p>
             <{/if}>
-            <p class="mt2"><i>¥</i> <{$v.now_price}></p>
           </dd>
         </dl>
         <{/foreach}>
@@ -179,7 +178,7 @@
             <li>
               <div class="im"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/150x150/<{$v.goods_image}>" /></a></div>
               <h3><a title="<{$v.goods_name}>" href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name, 40)}></a></h3>
-              <p class="price"><i>¥</i> <{$v.now_price}></p>
+              <!-- <p class="price"><i>¥</i> <{$v.now_price}></p> -->
             </li>
             <{/foreach}>
           </ul>
