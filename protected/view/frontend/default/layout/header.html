@@ -9,7 +9,7 @@
           <div class="sf cut"><input class="fl" name="kw" type="text" value="" placeholder="Search in this store" /><button class="fr" type="submit">Search</button></div>
         </form>
         <{if !empty($header.hot_searches)}>
-        <div class="hw mt8">热门搜索：<{foreach $hot_searches as $v}><a href="<{url c='goods' a='search' kw=$v}>"><{$v}></a><{/foreach}></div>
+        <div class="hw mt8">Hot Search：<{foreach $hot_searches as $v}><a href="<{url c='goods' a='search' kw=$v}>"><{$v}></a><{/foreach}></div>
         <{/if}>
       </div>
       <!-- 头部搜索结束 -->

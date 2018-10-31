@@ -36,7 +36,7 @@
     <!-- 左侧开始 -->
     <div class="w210 fl cut">
       <div class="cli mb10">
-        <h2>资讯分类</h2>
+        <h2>Information classification</h2>
         <ul>
           <{if !empty($article_cate_list)}>
           <{foreach $article_cate_list as $v}>
@@ -50,7 +50,7 @@
     <div class="w880">
       <div class="article">
         <h1 class="aln-c c666"><{$article.title}></h1>
-        <div class="aln-c mt8 caaa">日期：<{date('Y-m-d H:i:s', $article.created_date)}></div>
+        <div class="aln-c mt8 caaa">：<{date('Y-m-d H:i:s', $article.created_date)}></div>
         <div class="content mt30 cut"><{$article.content nofilter}></div>
       </div>
     </div>

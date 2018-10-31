@@ -26,4 +26,8 @@ class main_controller extends general_controller
     {
         $this->compiler('404.html');
     }
+    public function action_contactus()
+    {
+        $this->compiler("contactus.html");
+    }
 }

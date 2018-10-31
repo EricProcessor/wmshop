@@ -49,7 +49,7 @@ function deleteFeedback(e){
   <div class="loc"><h2><i class="icon"></i>咨询反馈:<font class="ml5">[<{$rs.fb_id}>]</font></h2></div>
   <div class="box">
     <div class="ta-c bw-row pad10 c888 cut">
-      <p class="f14">用户<a class="blue ml5 mr5 f14" href="<{url m=$MOD c='user' a='view' id=$rs.user_id}>"><{$rs.username}></a>于<font class="ml5 mr5 c333"><{date('Y年m月d日 H:i:s', $rs.created_date)}></font>提交的问题反馈：</p>
+      <p class="f14">咨询信息详情</p>
     </div>
     <div class="ta-c bw-row mt5 pad10 cut">
       <table class="dataform">
@@ -58,8 +58,8 @@ function deleteFeedback(e){
           <td colspan="5"><div class="max500 pad5 lh150"><{$rs.subject}></div></td>
         </tr>
         <tr>
-          <th>类型</th>
-          <td width="20%"><{$type_map[$rs.type]}></td>
+          <th>商品编号</th>
+          <td width="20%"><{$rs.code}><a href="./index.php?c=goods&a=index&id=<{$rs.code}>">点击查看商品</a></td>
             <th width="110">联系邮箱</th>
           <td width="20%"><b class="c666"><{$rs.mobile}></b></td>
           <th width="110">状态</th>

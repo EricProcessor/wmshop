@@ -19,14 +19,15 @@ class feedback_controller extends general_controller
     
     public function action_save()
     {
-        $user_id = $this->is_logined();
+      //  $user_id = $this->is_logined();
         $data = array
         (
-            'user_id' => $user_id,
+            'user_id' => 1,
             'type' => (int)request('type', 0, 'post'),
             'subject' => strip_tags(trim(request('subject', '', 'post'))),
             'content' => strip_tags(trim(request('content', '', 'post'))),
             'mobile' => trim(request('email', '', 'post')),
+            'code' => trim(request('code', '', 'post')),
             'created_date' => $_SERVER['REQUEST_TIME'],
         );
         
@@ -36,6 +37,8 @@ class feedback_controller extends general_controller
         {
             if($feedback_model->create($data))
             {
+                $tpl_model = new email_tpl_model();
+                $tpl_model->send_mail('mail_zixun','yinhao1205@qq.com','0000');
                 $res = array('status' => 'success');
             }
             else

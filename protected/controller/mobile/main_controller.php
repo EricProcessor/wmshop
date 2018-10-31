@@ -19,8 +19,8 @@ class main_controller extends general_controller
     public function action_400()
     {
         $this->status = 400;
-        $this->title = '错误请求';
-        $this->content = '您的客户端发送了一个错误或非法的请求';
+        $this->title = 'error request';
+        $this->content = 'your request illegal.';
         $this->compiler('error.html');
         exit;
     }
@@ -28,9 +28,14 @@ class main_controller extends general_controller
     public function action_404()
     {
         $this->status = 404;
-        $this->title = '页面未找到';
-        $this->content = '很抱歉, 你要访问的页面或资源不存在';
+        $this->title = 'The page is 404';
+        $this->content = 'sorry , your request is not exist';
         $this->compiler('error.html');
         exit;
     }
+    public function action_contactus()
+    {
+        $this->compiler('contactus.html');
+    }
+
 }

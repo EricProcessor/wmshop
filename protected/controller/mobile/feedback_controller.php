@@ -15,6 +15,9 @@ class feedback_controller extends general_controller
     public function action_support()
     {
        // $user_id = $this->is_logined();
+        $code = request("code", "");
+        // echo $code;
+        $this->code = $code;
         $this->compiler('feedback.html');
     }
     
