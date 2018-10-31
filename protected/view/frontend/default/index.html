@@ -8,10 +8,15 @@
 <title><{$GLOBALS.cfg.home_title}></title>
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/general.css" />
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/index.css" />
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/layui/css/layui.css" />
 <script type="text/javascript" src="<{$common.baseurl}>/public/script/jquery.js"></script>
 <script type="text/javascript" src="<{$common.theme}>/js/general.js"></script>
 <script type="text/javascript" src="<{$common.theme}>/js/carousel.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/layui/layui.all.js"></script>
 </head>
+<style>
+  .layui-carousel>div>div img{width: 100%}
+</style>
 <body>
 <!-- 顶部开始 -->
 <{layout_topper common=$common}>
@@ -20,8 +25,50 @@
 <!-- 头部开始 -->
 <{layout_header common=$common}>
 <!-- 头部结束 -->
+<!-- <div class="header mt30">
+  <div class="w1100">
+    <div class="module cut">
+      <div class="logo fl"><a href="<{url c='main' a='index'}>"><img alt="<{$GLOBALS.cfg.site_name}>" src="<{$common.theme}>/images/logo.gif" border="0" /></a></div>
+      <div class="top-search fl">
+        <form method="get" action="<{url c='search' a='index'}>">
+          <{if $GLOBALS['cfg']['rewrite_enable'] == 0}><input type="hidden" name="c" value="search" /><input type="hidden" name="a" value="index" /><{/if}>
+          <div class="sf cut">
+            <input class="fl" name="kw" type="text" value="<{if isset($u.kw)}><{$u.kw}><{/if}>" placeholder="Search in this store" />
+            <button class="fr" type="submit">Search</button>
+          </div>
+        </form>
+        <{if !empty($hot_searches)}>
+        <div class="hw mt8">Hot Search：<{foreach $hot_searches as $v}><a href="<{url c='search' a='index' kw=$v}>"><{$v}></a><{/foreach}></div>
+        <{/if}>
+      </div>
+    </div>
+    <div class="module mt20">
+      <div class="nav cut">
+        <div class="cateth w210 fl"><h2>Products</h2></div>
+        <div class="cross cut">
+          <ul>
+            <li><a href="<{$common.baseurl}>">Home</a></li>
+
+            <{if !empty($nav.main)}>
+            <{foreach $nav.main as $v}>
+            <li><a href="<{$v.link}>"<{$v.target}>><{$v.name}></a></li>
+            <{/foreach}>
+            <{/if}>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
 <!-- 头部结束 -->
 <!-- 主体开始 -->
+<div class="layui-carousel" id="test1" lay-filter="test1">
+    <div carousel-item="">
+      <div> <img  src="<{$common.theme}>/images/ban1.jpg" alt=""> </div>
+      <div> <img src="<{$common.theme}>/images/ban2.jpg" alt=""> </div>
+      <div> <img src="<{$common.theme}>/images/ban3.jpg" alt=""> </div>
+    </div>
+</div> 
 <div class="container w1100">
   <div class="module cut">
     <!-- 商品分类开始 -->
@@ -109,5 +156,79 @@
 <{layout_footer}>
 <!-- 页脚结束 -->
 <script type="text/javascript" src="<{$common.baseurl}>/public/script/juicer.js"></script>
+<script>
+layui.use(['carousel', 'form'], function(){
+  var carousel = layui.carousel
+  ,form = layui.form;
+  
+  //常规轮播
+  carousel.render({
+    elem: '#test1'
+    ,arrow: 'always'
+    ,height: '450px'
+    ,width: '100%'
+  });
+  
+  //改变下时间间隔、动画类型、高度
+  // carousel.render({
+  //   elem: '#test1'
+  //   ,interval: 1800
+  //   ,anim: 'fade'
+  //   ,height: '400px'
+  //   ,width: '800px'
+  // });
+  
+  //设定各种参数
+  // var ins3 = carousel.render({
+  //   elem: '#test3'
+  // });
+  // //图片轮播
+  // carousel.render({
+  //   elem: '#test10'
+  //   ,width: '778px'
+  //   ,height: '440px'
+  //   ,interval: 5000
+  // });
+  
+  //事件
+  // carousel.on('change(test4)', function(res){
+  //   console.log(res)
+  // });
+  
+  var $ = layui.$, active = {
+    set: function(othis){
+      var THIS = 'layui-bg-normal'
+      ,key = othis.data('key')
+      ,options = {};
+      
+      othis.css('background-color', '#5FB878').siblings().removeAttr('style'); 
+      options[key] = othis.data('value');
+      ins3.reload(options);
+    }
+  };
+  
+  //监听开关
+  form.on('switch(autoplay)', function(){
+    ins3.reload({
+      autoplay: this.checked
+    });
+  });
+  
+  $('.demoSet').on('keyup', function(){
+    var value = this.value
+    ,options = {};
+    if(!/^\d+$/.test(value)) return;
+    
+    options[this.name] = value;
+    ins3.reload(options);
+  });
+  
+  //其它示例
+  $('.demoTest .layui-btn').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+});
+</script>
 </body>
 </html>

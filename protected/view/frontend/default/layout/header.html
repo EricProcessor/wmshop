@@ -1,7 +1,7 @@
 <div class="header">
   <div class="w1100">
     <div class="module cut">
-      <div class="logo fl"><a href="<{url c='main' a='index'}>"><img alt="<{$GLOBALS.cfg.site_name}>" src="<{$common.theme}>/images/logo.gif" border="0" /></a></div>
+      <div class="logo fl"><a href="<{url c='main' a='index'}>"><img alt="<{$GLOBALS.cfg.site_name}>" src="<{$common.theme}>/images/logo.png" border="0" /></a></div>
       <!-- 头部搜索开始 -->
       <div class="top-search fl">
         <form method="get" action="<{url c='search' a='index'}>">
@@ -14,23 +14,27 @@
       </div>
       <!-- 头部搜索结束 -->
     </div>
-    <div class="module mt20">
-      <!-- 导航开始 -->
-      <div class="nav">
-        <div class="cateth w210 fl" id="cateth">
-          <h2>Departments<i class="icon"></i></h2>
-          <div class="catebar w210 hide"><{layout_catebar}></div>
+  </div>
+  <div class="llh-nav">
+    <div class="w1100">
+      <div class="module mt20">
+        <!-- 导航开始 -->
+        <div class="nav">
+          <div class="cateth w210 fl" id="cateth">
+            <h2>Products<i class="icon"></i></h2>
+            <div class="catebar w210 hide"><{layout_catebar}></div>
+          </div>
+          <div class="cross cut">
+            <ul>
+              <li><a href="<{$common.baseurl}>">Home</a></li>
+              <{foreach $nav as $v}>
+              <li><a href="<{$v.link}>" <{$v.target nofilter}>><{$v.name}></a></li>
+              <{/foreach}>
+            </ul>
+          </div>
         </div>
-        <div class="cross cut">
-          <ul>
-            <li><a href="<{$common.baseurl}>">Home</a></li>
-            <{foreach $nav as $v}>
-            <li><a href="<{$v.link}>" <{$v.target nofilter}>><{$v.name}></a></li>
-            <{/foreach}>
-          </ul>
-        </div>
+        <!-- 导航结束 -->
       </div>
-      <!-- 导航结束 -->
     </div>
   </div>
 </div>
