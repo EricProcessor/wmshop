@@ -17,58 +17,15 @@
 <{layout_topper common=$common}>
 <!-- 顶部结束 -->
 <!-- 头部开始 -->
-<div class="header mt30">
-  <div class="w1100">
-    <!-- 头部主体开始 -->
-    <div class="module cut">
-      <div class="logo fl"><a href="<{url c='main' a='index'}>"><img alt="<{$GLOBALS.cfg.site_name}>" src="<{$common.theme}>/images/logo.gif" border="0" /></a></div>
-      <!-- 头部搜索开始 -->
-      <div class="top-search fl">
-        <form method="get" action="<{url c='search' a='index'}>">
-          <{if $GLOBALS['cfg']['rewrite_enable'] == 0}><input type="hidden" name="c" value="search" /><input type="hidden" name="a" value="index" /><{/if}>
-          <div class="sf cut">
-            <input class="fl" name="kw" type="text" value="<{if isset($u.kw)}><{$u.kw}><{/if}>" placeholder="Search in this store" />
-            <button class="fr" type="submit">Search</button>
-          </div>
-        </form>
-        <{if !empty($hot_searches)}>
-        <div class="hw mt8">Hot Search：<{foreach $hot_searches as $v}><a href="<{url c='search' a='index' kw=$v}>"><{$v}></a><{/foreach}></div>
-        <{/if}>
-      </div>
-      <!-- 头部搜索结束 -->
-      <!-- 头部购物车开始 -->
-      <!-- <div class="top-cart fr">
-        <div class="radius4 mt10"><i class="icon"></i><a href="<{url c='cart' a='index'}>" id="cartbar"><font>我的购物车</font>(<b>0</b>)</a></div>
-      </div> -->
-      <!-- 头部购物车结束 -->
-    </div>
-    <!-- 头部主体结束 -->
-    <div class="module mt20">
-      <!-- 导航开始 -->
-      <div class="nav cut">
-        <div class="cateth w210 fl"><h2>Departments</h2></div>
-        <div class="cross cut">
-          <ul>
-            <li><a href="<{$common.baseurl}>">Home</a></li>
-
-            <{if !empty($nav.main)}>
-            <{foreach $nav.main as $v}>
-            <li><a href="<{$v.link}>"<{$v.target}>><{$v.name}></a></li>
-            <{/foreach}>
-            <{/if}>
-          </ul>
-        </div>
-      </div>
-      <!-- 导航结束 -->
-    </div>
-  </div>
-</div>
+<!-- 头部开始 -->
+<{layout_header common=$common}>
+<!-- 头部结束 -->
 <!-- 头部结束 -->
 <!-- 主体开始 -->
 <div class="container w1100">
   <div class="module cut">
     <!-- 商品分类开始 -->
-    <div class="catebar w210 fl"><{layout_catebar}></div>
+    <!-- <div class="catebar w210 fl"><{layout_catebar}></div> -->
     <!-- 商品分类结束 -->
     <!-- 轮播图片广告开始 -->
     <!-- <div class="w640 fl cut"><{layout_adv id='1'}></div> -->
