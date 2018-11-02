@@ -31,14 +31,23 @@ class goods_cate_model extends Model
     }
     
     /**
-     * 获取商品分类栏中的1、2级分类(只找顶级和其子分类)
+     * 获取商品分类栏中的1、2、3级分类(只找顶级和其子分类)
      */
     public function goods_cate_bar()
     {
         $field = 'cate_id, cate_name';
         if($cates = $this->find_all(array('parent_id' => 0), 'seq ASC', $field))
         {
-            foreach($cates as $k => $v) $cates[$k]['children'] = $this->find_all(array('parent_id' => $v['cate_id']), 'seq ASC', $field);
+            foreach($cates as $k => $v){
+                $cates[$k]['children'] = $this->find_all(array('parent_id' => $v['cate_id']), 'seq ASC', $field);
+                //$children = $cates[$k]['children'];
+                // 如果有三级分类的话
+                if ($cates[$k]['children']){
+                    foreach ($cates[$k]['children'] as $kk => $vv){
+                        $cates[$k]['children'][$kk]['children2']  = $this->find_all(array('parent_id' => $vv['cate_id']), 'seq ASC', $field);
+                    }
+                }
+                }
         }
         return $cates;
     }
@@ -64,7 +73,7 @@ class goods_cate_model extends Model
         }
         return $results;
     }
-    
+
     /**
      * 设置分类的筛选项
      */

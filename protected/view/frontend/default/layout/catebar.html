@@ -1,14 +1,24 @@
 <{if !empty($catebar)}>
 <ul id="catebar">
-  <{foreach $catebar as $v}>
-  <{if !empty($v.children)}>
-  <li class="haschild">
-    <b>&gt;</b><a href="<{url c='category' a='index' id=$v.cate_id}>"><{$v.cate_name}></a>
-    <div><{foreach $v.children as $vv}><a href="<{url c='category' a='index' id=$vv.cate_id}>"><{$vv.cate_name}></a><{/foreach}></div>
-  </li>
-  <{else}>
-  <li><a href="<{url c='category' a='index' id=$v.cate_id}>"><{$v.cate_name}></a></li>
-  <{/if}>
-  <{/foreach}>
+    <{foreach $catebar as $v}>
+    <{if !empty($v.children)}>
+    <li class="haschild">
+        <b>&gt;</b><a href="<{url c='category' a='index' id=$v.cate_id}>"><{$v.cate_name}></a>
+        <div>
+            <{foreach $v.children as $vv}>
+            <{if !empty($vv.children2)}>
+            <b>&gt;</b><a href="<{url c='category' a='index' id=$vv.cate_id}>"><{$vv.cate_name}></a>
+            <div> <{foreach $vv.children2 as $vvv}><a href="<{url c='category' a='index' id=$vvv.cate_id}>"><{$vvv.cate_name}></a><{/foreach}></div>
+            <{else}>
+
+            <a href="<{url c='category' a='index' id=$vv.cate_id}>"><{$vv.cate_name}></a>
+            <{/if}>
+            <{/foreach}>
+        </div>
+    </li>
+    <{else}>
+    <li><a href="<{url c='category' a='index' id=$v.cate_id}>"><{$v.cate_name}></a></li>
+    <{/if}>
+    <{/foreach}>
 </ul>
 <{/if}>

@@ -21,10 +21,13 @@ class feedback_controller extends general_controller
                 $binds[':status'] = (int)$status;
             }
             
-            $results = array('status' => 'nodata');
+            $results = array('status' => 'no data11');
             
             $feedback_model = new feedback_model();
             $total = $feedback_model->query("SELECT COUNT(*) as count FROM {$feedback_model->table_name} AS a {$where}", $binds);
+
+            $results['count'] = $total[0]['count'];
+
             if($total[0]['count'] > 0)
             {
                 $limit = $feedback_model->set_limit(array(request('page', 1), request('pernum', 15)), $total[0]['count']);
@@ -35,19 +38,24 @@ class feedback_controller extends general_controller
                         ON a.user_id = b.user_id
                         {$where} ORDER BY fb_id DESC {$limit}
                        ";
+
+
                 if($list = $feedback_model->query($sql, $binds))
                 {
                     $type_map = $feedback_model->type_map;
                     $status_map = $feedback_model->status_map;
+                    $results["wo"] = 'wowowo';
                     foreach($list as &$v)
                     {
                         $v['type'] = $type_map[$v['type']];
                         $v['status'] = $status_map[$v['status']];
-                        $v['created_date'] = date('Y-m-d', $v['created_date']).'<br />'.date('H:i:s', $v['created_date']);
+                        $v['created_date'] = date('Y-m-d', $v['created_date']).' '.date('H:i:s', $v['created_date']);
                     }
                     $results = array
                     (
+
                         'status' => 'success',
+                        'sql' => $sql,
                         'list' => $list,
                         'paging' => $feedback_model->page,
                     );
