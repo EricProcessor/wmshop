@@ -324,6 +324,7 @@ div.llh-nav{width:100%;background-color: #1D7AD9;}
   .nav .cateth i{margin-left: 180px;}
   .catebar li.hover div{left: 279px;}
   .layui-carousel>div>div img{width: 100%}
+  .llh-bg{width: 100%}
   /* .catebar li.hover div{
     width: 280px;
     left: 0px;
@@ -333,3 +334,10 @@ div.llh-nav{width:100%;background-color: #1D7AD9;}
   .catebar li.hover{
       border: none;
   } */
+  .cf:before,.cf:after {
+    content:"";
+    display:table;
+ }
+ .cf:after { clear:both; }
+ .w680{width: 680px;}
+ .llh-module{width: 70%}  
