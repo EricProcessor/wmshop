@@ -167,7 +167,8 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
   </div>
   <div class="module mt10 cut">
     <!-- 左边开始 -->
-    <div class="w210 fl cut">
+    <div class="catebar w280 fl"><{layout_catebar}></div>
+    <!-- <div class="w210 fl cut">
       <{if !empty($related)}>
       <div class="sli mb10">
         <h2>相关推荐</h2>
@@ -195,7 +196,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
         <{/foreach}>
       </div>
       <{/if}>
-    </div>
+    </div> -->
     <!-- 左边结束 -->
     <!-- 详情开始 -->
     <div class="details cut">
@@ -224,7 +225,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
       </div>
       <!-- 规格参数结束 -->
       <!-- 商品评论开始 -->
-      <div class="content hide">
+      <!-- <div class="content hide">
         <div class="synrating cut">
           <div class="rating fl cut"><font><{$rating.avg}></font> 分</div>
           <div class="satisficing cut">
@@ -240,7 +241,7 @@ function reviewPageJump(e){showReviewList($(e).prev('input').val())}
           </div>
         </div>
         <div class="reviews module mt20 cut" id="reviews"></div>
-      </div>
+      </div> -->
       <!-- 商品评论结束 -->
     </div>
     <!-- 详情结束 -->

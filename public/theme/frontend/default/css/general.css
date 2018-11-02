@@ -145,7 +145,7 @@ div.llh-nav{width:100%;background-color: #1D7AD9;}
 .catebar li.hover {background:#fff;margin:0;border:2px solid #5AA1FE;border-bottom:1px solid #5AA1FE;border-right:none;}
 .catebar li.hover a {color:#1D7AD9;}
 .catebar li.hover b {display:none;}
-.catebar li.hover div {width:180px;position:absolute;display:block;border:2px solid #5AA1FE;border-left:none;left:208px;top:-2px;background:#fff;overflow:hidden;z-index:99}
+.catebar li.hover div {width:300px;position:absolute;display:block;border:2px solid #5AA1FE;border-left:none;left:208px;top:-2px;background:#fff;overflow:hidden;z-index:99}
 .catebar li.hover div a {display:block;color:#666;height:35px;line-height:35px;padding:0 10px 0 20px;}
 .catebar li.hover div a:hover {color:#CC3366;text-decoration:none}
 .helpper {margin-top:50px;background:#f7f7f7;border:1px solid #eee;}
@@ -291,6 +291,7 @@ div.llh-nav{width:100%;background-color: #1D7AD9;}
 }
 .llh-send{
     background: url("../images/1.jpg") no-repeat;
+    background-size: 2200px;
     height: 680px;
 }
 .llh-intro{
@@ -318,3 +319,17 @@ div.llh-nav{width:100%;background-color: #1D7AD9;}
     padding-left: 85px;
     margin-top: 40px;
   }
+  .w280{width: 280px;}
+  .nav .cateth{width: 280px;}
+  .nav .cateth i{margin-left: 180px;}
+  .catebar li.hover div{left: 279px;}
+  .layui-carousel>div>div img{width: 100%}
+  /* .catebar li.hover div{
+    width: 280px;
+    left: 0px;
+    top: 36px;
+    border:none; 
+  }
+  .catebar li.hover{
+      border: none;
+  } */
