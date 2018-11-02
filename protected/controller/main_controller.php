@@ -26,6 +26,13 @@ class main_controller extends general_controller
     {
         $this->compiler('404.html');
     }
+    public function action_cate()
+    {
+        $cate_model = new goods_cate_model();
+        $this->cate_list = $cate_model->goods_cate_bar();
+        dump( $this->cate_list);
+        //  $this->compiler('category.html');
+    }
     public function action_contactus()
     {
         $this->compiler("contactus.html");
