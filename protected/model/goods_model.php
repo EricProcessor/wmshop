@@ -31,6 +31,26 @@ class goods_model extends Model
         (
             'is_decimal' => array(TRUE, '重量格式不正确'),
         ),
+        'production_ability' => array
+        (
+          //  'is_decimal' => array(TRUE, '重量格式不正确'),
+        ),
+        'port' => array
+        (
+         //   'is_decimal' => array(TRUE, '重量格式不正确'),
+        ),
+        'payment_term'=>array
+        (
+         //   'is_decimal' => array(TRUE, '重量格式不正确'),
+        ),
+        'package'=>array
+        (
+         //   'is_decimal' => array(TRUE, '重量格式不正确'),
+        ),
+        'moq'=>array
+        (
+          //  'is_decimal' => array(TRUE, '重量格式不正确'),
+        ),
     );
     
     /**
