@@ -25,6 +25,10 @@ function createEncrypt(){
         <td><input class="w250 txt" name="site_name" type="text" value="<{$rs.site_name}>" /><font class="caaa ml20">显示在浏览器窗口标题栏后缀位置</font></td>
       </tr>
       <tr>
+        <th width="180" style="color: red">服务邮箱</th>
+        <td><input class="w250 txt" name="site_email" type="text" value="<{$rs.site_email}>" /><font class="caaa ml20">用户咨询信息，将发送到该邮箱！</font></td>
+      </tr>
+      <tr>
         <th>数据加密密钥</th>
         <td>
           <input class="w300 txt" name="encrypt_key" id="encrypt_key" type="text" value="<{$rs.encrypt_key}>" />

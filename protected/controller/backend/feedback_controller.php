@@ -7,7 +7,6 @@ class feedback_controller extends general_controller
         {
             $where = ' WHERE 1';
             $binds = array();
-            
             $type = request('type', '');
             if($type != '')
             {
@@ -39,7 +38,7 @@ class feedback_controller extends general_controller
                         {$where} ORDER BY fb_id DESC {$limit}
                        ";
 
-
+                $results["sql"] = $sql;
                 if($list = $feedback_model->query($sql, $binds))
                 {
                     $type_map = $feedback_model->type_map;
