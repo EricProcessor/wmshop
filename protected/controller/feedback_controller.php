@@ -48,7 +48,7 @@ class feedback_controller extends general_controller
     public function action_auth()
     {
         //$user_id = $this->is_logined();
-        $email = request('email', 'Yinhao1205@qq.com');
+        $email = request('email', $GLOBALS['cfg']['site_email']);
       //  $email = ''
         if(verifier::is_required($email, TRUE) && verifier::is_email($email, TRUE))
         {

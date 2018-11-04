@@ -38,7 +38,7 @@ class feedback_controller extends general_controller
             if($feedback_model->create($data))
             {
                 $tpl_model = new email_tpl_model();
-                $tpl_model->send_mail('mail_zixun','yinhao1205@qq.com','0000');
+                $tpl_model->send_mail('mail_zixun',$GLOBALS['cfg']['site_email'],'0000');
                 $res = array('status' => 'success');
             }
             else

@@ -21,6 +21,7 @@ class setting_controller extends general_controller
                 $data = array
                 (
                     'site_name' => trim(request('site_name', '')),
+                    'site_email' => trim(request('site_email','')),
                     'encrypt_key' => trim(request('encrypt_key', '')),
                     'debug' => (int)request('debug', 0),
                     'visitor_stats' => (int)request('visitor_stats', 0),
