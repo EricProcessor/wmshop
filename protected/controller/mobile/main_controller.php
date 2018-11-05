@@ -41,5 +41,9 @@ class main_controller extends general_controller
     {
         $this->compiler("businessAreas.html");
     }
+    public function action_aboutus()
+    {
+        $this->compiler("aboutus.html");
+    }
 
 }

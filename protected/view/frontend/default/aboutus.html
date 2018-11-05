@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="verydows-baseurl" content="<{$common.baseurl}>">
+<meta name="keywords" content="Qingdao Instar International Trade Co., LTD" />
+<meta name="description" content="Qingdao Instar International Trade Co., LTD" />
+<title>Qingdao Instar International Trade Co., LTD</title>
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/general.css" />
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/goods.css" />
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/layui/css/layui.css" />
+<script type="text/javascript" src="<{$common.baseurl}>/public/script/jquery.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/jquery.zoom.min.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/general.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/js/goods.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/layui/layui.all.js"></script>
+<script type="text/javascript">
+
+
+
+
+function reviewPageTurn(page_id){showReviewList(page_id);}
+function reviewPageJump(e){showReviewList($(e).prev('input').val())}
+</script>
+</head>
+<style>
+  .llh-intro{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .llh-comin p{
+    font-size: 20px;
+    line-height: 48px;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid #1d7ad9;
+  }
+  .llh-comin{
+    padding-bottom: 20px;
+  }
+</style>
+<body>
+<!-- 顶部开始 -->
+<{layout_topper common=$common}>
+<!-- 顶部结束 -->
+<!-- 头部开始 -->
+<{layout_header common=$common}>
+<!-- 头部结束 -->
+
+<!-- 主体开始 -->
+<div class="layui-carousel" id="test1" lay-filter="test1">
+  <div carousel-item="">
+    <div> <img  src="<{$common.theme}>/images/ban1.jpg" alt=""> </div>
+    <div> <img src="<{$common.theme}>/images/ban2.jpg" alt=""> </div>
+    <div> <img src="<{$common.theme}>/images/ban3.jpg" alt=""> </div>
+  </div>
+</div> 
+<div class="llh-comintro">
+  <div class="container w1100" style="padding: 30px;">
+      <div class="llh-comin">
+        <p>Company Introduction</p>
+      </div>
+      <p class="llh-intro">Qingdao Instar International Trade Co., LTD is a professional supplier of sublimation products.</p>
+      <p class="llh-intro">
+          Our company supplied many different kinds of sublimation products, include the sublimation ceramic mugs, sublimation stainsteel steel water bottles, sublimation glasses, sublimation phone covers, and so on. And we develop another industrial wooden products, such as wooden wine box,wooden photo frame, wooden packages and many different wooden craft.
+          In recent years, our products are selling well all over the world, especiall in Europe and America, south America and south east Asia. We always adhere to the principle of equality and matual benefit, so we won good reputation and favour because of our superior quality,honest dealing,best after-sales service and competitive price in the domestic and overseas.
+          We welcome different countries import and export enterprises to contact us for business warmly.
+          We sincerely hope we will build up business relationship with you in future.
+          We expect your coming!
+      </p> 
+      <div style="text-align: center;padding: 10px 0;">
+          <img src="<{$common.theme}>/images/wl.jpg" alt="">
+      </div>
+  </div>
+</div>
+<!-- 主体结束 -->
+<!-- 页脚开始 -->
+<{layout_footer}>
+<!-- 页脚结束 -->
+<!-- 评价模板开始 -->
+<script type="text/template" id="review-tpl">
+{@each list as v}
+<dl>
+  <dt><div class="avatar">{@if v.avatar != ''}<img width="60" height="60" src="<{$common.baseurl}>/upload/user/avatar/${v.avatar}" />{@else}<i class="icon"></i>{@/if}</div><div class="uname">${v.username}</div></dt>
+  <dd>
+    <div><span class="rating s_${v.rating}"></span><font>${v.satisficing}</font></div>
+    <p class="mt10 c666">${v.content}</p>
+    <p class="mt8 caaa aln-r">${v.created_date}</p>
+  </dd>
+  {@if v.replied != ''}
+  <dd class="replied mt10">
+    <p class="c666"><strong>客服回复：</strong>${v.replied.content}</p>
+    <p class="mt5 caaa aln-r">${v.replied.dateline}</p>
+  </dd>
+  {@/if}
+</dl>
+{@/each}
+</script>
+<!-- 评价模板结束 -->
+<!-- 评价翻页模板开始 -->
+<script type="text/template" id="review-paging-tpl">
+<div class="module aln-r cut">
+  <div class="paging small">
+    {@if paging.first_page == paging.current_page}<span class="disabled">上一页</span>{@else}<a onclick="reviewPageTurn(${paging.prev_page})">上一页</a>{@/if}
+    {@each paging.all_pages as v}
+    {@if paging.current_page == v}<span class="cur">${paging.current_page}</span>{@else}<a onclick="reviewPageTurn(${v})">${v}</a>{@/if}
+    {@/each}
+    {@if paging.last_page == paging.current_page}<span class="disabled">下一页</span>{@else}<a onclick="reviewPageTurn(${paging.next_page})">下一页</a>{@/if}
+    <span class="tot">共<b>${paging.total_page}</b>页</span>
+    <span class="jump">转到第<input type="text" value="${paging.current_page}" />页<button type="button" onclick="reviewPageJump(this)">确 定</button></span>
+  </div>
+</div>
+</script>
+<!-- 评价翻页模板结束 -->
+<!-- 加入购物车对话框开始 -->
+<div class="tocart-dialog cut" id="tocart-dialog">
+  <p><i class="icon"></i><font class="ml10"></font></p>
+  <div class="mt20"><a class="sm-green" href="<{url c='cart' a='index'}>">结算付款</a><a class="sm-gray" onclick="cancelTocartDialog()">继续购物</a></div>
+  <a class="c999" onclick="cancelTocartDialog()">×</a>
+</div>
+<!-- 加入购物车对话框结束 -->
+<!-- 用户登陆框开始 -->
+<{layout_login common=$common}>
+<!-- 用户登陆框结束 -->
+<script type="text/javascript" src="<{$common.baseurl}>/public/script/juicer.js"></script>
+<script>
+  layui.use(['carousel', 'form'], function(){
+  var carousel = layui.carousel
+  ,form = layui.form;
+  
+  //常规轮播
+  carousel.render({
+    elem: '#test1'
+    ,arrow: 'always'
+    ,height: '450px'
+    ,width: '100%'
+  });
+  var $ = layui.$, active = {
+    set: function(othis){
+      var THIS = 'layui-bg-normal'
+      ,key = othis.data('key')
+      ,options = {};
+      
+      othis.css('background-color', '#5FB878').siblings().removeAttr('style'); 
+      options[key] = othis.data('value');
+      ins3.reload(options);
+    }
+  };
+  
+  //监听开关
+  form.on('switch(autoplay)', function(){
+    ins3.reload({
+      autoplay: this.checked
+    });
+  });
+  
+  $('.demoSet').on('keyup', function(){
+    var value = this.value
+    ,options = {};
+    if(!/^\d+$/.test(value)) return;
+    
+    options[this.name] = value;
+    ins3.reload(options);
+  });
+  
+  //其它示例
+  $('.demoTest .layui-btn').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+});
+</script>
+</body>
+</html>
