@@ -39,7 +39,7 @@ class main_controller extends general_controller
     }
     public function action_business()
     {
-        $this->compiler("business.html");
+        $this->compiler("businessAreas.html");
     }
     public function action_aboutus()
     {
