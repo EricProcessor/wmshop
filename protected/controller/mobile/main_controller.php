@@ -37,5 +37,9 @@ class main_controller extends general_controller
     {
         $this->compiler('contactus.html');
     }
+    public function action_business()
+    {
+        $this->compiler("business.html");
+    }
 
 }
