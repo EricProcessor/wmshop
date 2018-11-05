@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8e8315-fd6e-4938-8170-911b36b0fe89" name="默认的" comment="增加">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/view/frontend/default/aboutus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/view/mobile/default/aboutus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/main_controller.php" afterPath="$PROJECT_DIR$/protected/controller/main_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" afterPath="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/resources/timer.txt" afterPath="$PROJECT_DIR$/protected/resources/timer.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/api/goods_controller.php" afterPath="$PROJECT_DIR$/protected/controller/api/goods_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/model/goods_model.php" afterPath="$PROJECT_DIR$/protected/model/goods_model.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,12 +24,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controller/mobile/main_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="175">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods_controller.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controller/api/goods_controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/model/goods_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="148" column="93" lean-forward="false" selection-start-line="148" selection-start-column="93" selection-end-line="148" selection-end-column="93" />
+              <folding>
+                <marker date="1541418897602" expanded="true" signature="4423:4473" ph="SELECT COUNT... " />
+                <marker date="1541418897602" expanded="true" signature="5258:5326" ph="SELECT ${{$f... " />
+                <marker date="1541418897602" expanded="true" signature="6190:6433" ph="SELECT cate_... $" />
+                <marker date="1541418897602" expanded="true" signature="6532:6775" ph="SELECT brand... $" />
+                <marker date="1541418897602" expanded="true" signature="8635:8781" ph="SELECT count... " />
+                <marker date="1541418897602" expanded="true" signature="10410:10709" ph="SELECT goods... $" />
+                <marker date="1541418897602" expanded="true" signature="11859:12020" ph="SELECT goods... $" />
+                <marker date="1541418897602" expanded="true" signature="12590:12751" ph="SELECT goods... $" />
+                <marker date="1541418897602" expanded="true" signature="13666:14046" ph="SELECT a.id,... $" />
+                <marker date="1541418897602" expanded="true" signature="15108:15403" ph="SELECT goods... $" />
+                <marker date="1541418897602" expanded="true" signature="15725:16100" ph="SELECT a.goo... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,26 +130,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controller/category_controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catebar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/layout/catebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -204,6 +212,8 @@
         <option value="$PROJECT_DIR$/protected/view/backend/goods/goods.html" />
         <option value="$PROJECT_DIR$/protected/controller/main_controller.php" />
         <option value="$PROJECT_DIR$/protected/controller/mobile/main_controller.php" />
+        <option value="$PROJECT_DIR$/protected/model/goods_model.php" />
+        <option value="$PROJECT_DIR$/protected/controller/api/goods_controller.php" />
       </list>
     </option>
   </component>
@@ -221,7 +231,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="567" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -268,7 +278,7 @@
               <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +372,7 @@
       <workItem from="1541067414817" duration="12722000" />
       <workItem from="1541150434689" duration="1155000" />
       <workItem from="1541340635716" duration="1310000" />
-      <workItem from="1541413198512" duration="2502000" />
+      <workItem from="1541413198512" duration="5659000" />
     </task>
     <task id="LOCAL-00001" summary="去掉后台页脚版权">
       <created>1540730825648</created>
@@ -389,10 +399,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49629000" />
+    <option name="totallyTimeSpent" value="52786000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -435,13 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/view/frontend/default/prompt.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -721,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/model/goods_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2075">
-          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controller/category_controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -819,8 +815,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controller/mobile/main_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="175">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/model/goods_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="148" column="93" lean-forward="false" selection-start-line="148" selection-start-column="93" selection-end-line="148" selection-end-column="93" />
+          <folding>
+            <marker date="1541418897602" expanded="true" signature="4423:4473" ph="SELECT COUNT... " />
+            <marker date="1541418897602" expanded="true" signature="5258:5326" ph="SELECT ${{$f... " />
+            <marker date="1541418897602" expanded="true" signature="6190:6433" ph="SELECT cate_... $" />
+            <marker date="1541418897602" expanded="true" signature="6532:6775" ph="SELECT brand... $" />
+            <marker date="1541418897602" expanded="true" signature="8635:8781" ph="SELECT count... " />
+            <marker date="1541418897602" expanded="true" signature="10410:10709" ph="SELECT goods... $" />
+            <marker date="1541418897602" expanded="true" signature="11859:12020" ph="SELECT goods... $" />
+            <marker date="1541418897602" expanded="true" signature="12590:12751" ph="SELECT goods... $" />
+            <marker date="1541418897602" expanded="true" signature="13666:14046" ph="SELECT a.id,... $" />
+            <marker date="1541418897602" expanded="true" signature="15108:15403" ph="SELECT goods... $" />
+            <marker date="1541418897602" expanded="true" signature="15725:16100" ph="SELECT a.goo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controller/api/goods_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding />
         </state>
       </provider>

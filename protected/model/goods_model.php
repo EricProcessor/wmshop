@@ -146,7 +146,7 @@ class goods_model extends Model
             {
                 $sort = 'goods_id DESC';
             }
-            $fields = 'goods_id, cate_id, brand_id, goods_name, original_price, goods_brief, now_price, goods_image';
+            $fields = 'goods_id, cate_id, brand_id, goods_sn, goods_image,goods_content,goods_weight,stock_qty, goods_name, original_price, goods_brief, now_price, goods_image,recommend,production_ability,port,payment_term,package,moq';
             $sql = "SELECT {$fields} FROM {$this->table_name} {$where} ORDER BY {$sort} {$limit}";
             return $this->query($sql, $binds);
         }
