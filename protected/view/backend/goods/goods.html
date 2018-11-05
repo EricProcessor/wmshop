@@ -301,13 +301,33 @@ function submitForm(){
             </td>
           </tr>
           <tr>
+            <th>production ability</th>
+            <td><input class="w200 txt" name="production_ability" type="text" value="<{$rs.production_ability}>" /><p class="c999 mt10"></p></td>
+          </tr>
+          <tr>
+            <th>port</th>
+            <td><input class="w200 txt" name="port" type="text" value="<{$rs.port}>"/><p class="c999 mt10"></p></td>
+          </tr>
+          <tr>
+            <th>payment term</th>
+            <td><input class="w200 txt" name="payment_term" type="text" value="<{$rs.payment_term}>"/><p class="c999 mt10"></p></td>
+          </tr>
+          <tr>
+            <th>package</th>
+            <td><input class="w200 txt" name="package" type="text" value="<{$rs.package}>"/><p class="c999 mt10"></p></td>
+          </tr>
+          <tr>
+            <th>MOQ</th>
+            <td><input class="w200 txt" name="moq" type="text" value="<{$rs.moq}>"/><p class="c999 mt10"></p></td>
+          </tr>
+          <tr style="display:none">
             <th>当前售价</th>
             <td>
               <input class="w200 txt" name="now_price" id="now_price" type="text" value="<{$rs.now_price}>" />
               <p class="c999 mt10">售价请按此格式填写, 如: "188.00" 或 "8.00"</p>
             </td>
           </tr>
-          <tr>
+          <tr style="display:none">
             <th>原售价</th>
             <td>
               <input class="w200 txt" name="original_price" id="original_price" type="text" value="<{$rs.original_price}>" />
