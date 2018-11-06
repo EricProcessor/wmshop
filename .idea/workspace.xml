@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8e8315-fd6e-4938-8170-911b36b0fe89" name="默认的" comment="增加">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/resources/timer.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/theme/frontend/default/images/banner1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/theme/frontend/default/images/banner2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/theme/frontend/default/images/banner3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/view/frontend/default/layout/carousel.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controller/api/goods_controller.php" afterPath="$PROJECT_DIR$/protected/controller/api/goods_controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/businessAreas.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/businessAreas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/company.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/company.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/contactus.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/contactus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/view/frontend/default/index.html" afterPath="$PROJECT_DIR$/protected/view/frontend/default/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +46,8 @@
       <file leaf-file-name="goods_controller.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/controller/api/goods_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="646">
+              <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -124,15 +130,15 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1541461529819" expanded="true" signature="5826:5853" ph="{&quot;elem&quot;: '##test1'...}" />
-                <marker date="1541461529819" expanded="true" signature="5826:6656" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="5826:6667" ph="..." />
-                <marker date="1541461529819" expanded="true" signature="5884:6165" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="5910:6161" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="6219:6279" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="6237:6273" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="6323:6474" ph="{...}" />
-                <marker date="1541461529819" expanded="true" signature="6539:6652" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="5763:5790" ph="{&quot;elem&quot;: '##test1'...}" />
+                <marker date="1541502520935" expanded="true" signature="5763:6593" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="5763:6604" ph="..." />
+                <marker date="1541502520935" expanded="true" signature="5821:6102" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="5847:6098" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="6156:6216" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="6174:6210" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="6260:6411" ph="{...}" />
+                <marker date="1541502520935" expanded="true" signature="6476:6589" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -291,21 +297,7 @@
               <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
@@ -320,14 +312,6 @@
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wmshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wmshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mobile" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -386,7 +370,7 @@
       <workItem from="1541150434689" duration="1155000" />
       <workItem from="1541340635716" duration="1310000" />
       <workItem from="1541413198512" duration="6303000" />
-      <workItem from="1541498647766" duration="523000" />
+      <workItem from="1541498647766" duration="2410000" />
     </task>
     <task id="LOCAL-00001" summary="去掉后台页脚版权">
       <created>1540730825648</created>
@@ -413,7 +397,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53953000" />
+    <option name="totallyTimeSpent" value="55840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -789,15 +773,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1541461529819" expanded="true" signature="5826:5853" ph="{&quot;elem&quot;: '##test1'...}" />
-            <marker date="1541461529819" expanded="true" signature="5826:6656" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="5826:6667" ph="..." />
-            <marker date="1541461529819" expanded="true" signature="5884:6165" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="5910:6161" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="6219:6279" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="6237:6273" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="6323:6474" ph="{...}" />
-            <marker date="1541461529819" expanded="true" signature="6539:6652" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="5763:5790" ph="{&quot;elem&quot;: '##test1'...}" />
+            <marker date="1541502520935" expanded="true" signature="5763:6593" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="5763:6604" ph="..." />
+            <marker date="1541502520935" expanded="true" signature="5821:6102" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="5847:6098" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="6156:6216" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="6174:6210" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="6260:6411" ph="{...}" />
+            <marker date="1541502520935" expanded="true" signature="6476:6589" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -858,8 +842,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controller/api/goods_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="646">
+          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding />
         </state>
       </provider>
