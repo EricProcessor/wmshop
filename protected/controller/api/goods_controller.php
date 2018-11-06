@@ -75,7 +75,7 @@ class goods_controller extends general_controller
         }
         else
         {
-            echo json_encode(array('status' => 'nodata'));
+            echo  json_encode(array('status' => 'nodata'));
         }
    }
 }
