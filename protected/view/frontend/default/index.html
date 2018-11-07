@@ -42,18 +42,19 @@
         <h2 style="font-size:25px;font-weight: bold;color:#c91523;font-style: italic;"> Hot Sale </h2>
       </div>
       <div class="gli w680">
-        <{if !empty($recommend)}>
+        <!-- <{if !empty($recommend)}>
         <ul class="cf">
           <{foreach $recommend as $v}>
           <li>
             <div class="im"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/150x150/<{$v.goods_image}>" /></a></div>
             <h3><a href="<{url c='goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name, 40)}></a></h3>
-            <!-- <p class="price"><i>¥</i> <{$v.now_price}></p> -->
           </li>
           <{/foreach}>
         </ul>
-        <{/if}>
+        <{/if}> -->
+        <ul></ul>
       </div>
+      <div id="demo0"></div>
     </div>
     <{layout_helper}>
   </div>
@@ -136,6 +137,35 @@ layui.use(['carousel', 'form'], function(){
     active[type] ? active[type].call(this, othis) : '';
   });
 });
+/****************分页开始************/
+$(function(){
+  console.log(baseUrl);
+  // 请求产品数据
+  $.ajax({
+    type:"GET",
+    url:baseUrl+"/index.php?m=api&c=goods&a=pages&page=1",
+    dataType:"json",
+    success:function(data){
+      var res = data;
+      console.log(res);
+    }
+  });
+})
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+  //总页数低于页码总数
+  laypage.render({
+    elem: 'demo0',
+    count: 30, //数据总数
+    limit:9,//每页条数限制
+    first:'Fist',//第一页
+    last:'Last',//最后一页
+    prev:'<em>←</em>',//箭头
+    next:'<em>→</em>',//箭头
+    theme: '#FFB800'//主题颜色
+  });
+})
 </script>
 </body>
 </html>
