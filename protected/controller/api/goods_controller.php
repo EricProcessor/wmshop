@@ -69,9 +69,10 @@ class goods_controller extends general_controller
         );
 
         $goods_model = new goods_model();
-        if($list = $goods_model->find_goods($conditions, array(request('page', 1), request('pernum', 9))))
+        if($list = $goods_model->find_goods($conditions, array(request('page', 1), request('pernum', '100'))))
         {
-            echo json_encode(array('status' => 'success', 'list' => $list, 'paging' => $goods_model->page));
+
+            echo json_encode(array('status' => 'success', 'total' => $goods_model->find_count($conditions),'list' => $list, 'paging' => $goods_model->page));
         }
         else
         {
