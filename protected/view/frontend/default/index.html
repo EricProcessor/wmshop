@@ -143,6 +143,8 @@ layui.use(['carousel', 'form'], function(){
 });
 /****************分页开始************/
 $(function(){
+  var c = "c",
+      a = "a";
   console.log(baseUrl);
   // 请求产品数据
   $.ajax({
@@ -172,7 +174,7 @@ $(function(){
                 thisData = res.list.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
                 console.log(thisData);
                 layui.each(thisData,function(index,item){
-                  arr.push("<li><div class='im'><a href="+baseUrl+"/goods/index.html?id="+item.goods_id+"><img alt="+item.goods_image+" src="+baseUrl+"/upload/goods/prime/150x150/"+item.goods_image+"/></a></div><h3><a href="+baseUrl+"/goods/index.html?id="+item.goods_id+">"+item.goods_name+"</a></h3></li>")
+                  arr.push("<li><div class='im'><a href="+baseUrl+"/index.php?c=goods&a=index&id="+item.goods_id+"><img alt="+item.goods_name+" src="+baseUrl+"/upload/goods/prime/150x150/"+item.goods_image+"></a></div><h3><a href="+baseUrl+"/index.php?c=goods&a=index&id="+item.goods_id+">"+item.goods_name+"</a></h3></li>")
                 });
                 return arr.join('');
               }()
