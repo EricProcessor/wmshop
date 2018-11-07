@@ -43,7 +43,7 @@
       </div>
       <div class="gli w680">
         <{if !empty($recommend)}>
-        <ul>
+        <ul class="cf">
           <{foreach $recommend as $v}>
           <li>
             <div class="im"><a href="<{url c='goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/150x150/<{$v.goods_image}>" /></a></div>
