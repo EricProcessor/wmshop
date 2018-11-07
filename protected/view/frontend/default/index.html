@@ -56,7 +56,7 @@
           <{/foreach}>
         </ul>
         <{/if}> -->
-        <ul></ul>
+        <ul class="cf" id="pageContent"></ul>
       </div>
       <div id="demo0"></div>
     </div>
@@ -150,26 +150,39 @@ $(function(){
     url:baseUrl+"/index.php?m=api&c=goods&a=pages&page=1",
     dataType:"json",
     success:function(data){
-      var res = data;
+      res = data;
       console.log(res);
+      layui.use(['laypage', 'layer'], function(){
+          var laypage = layui.laypage
+          ,layer = layui.layer;
+          //总页数低于页码总数
+          laypage.render({
+            elem: 'demo0',
+            count: res.total, //数据总数
+            limit:9,//每页条数限制
+            first:'Fist',//第一页
+            last:'Last',//最后一页
+            prev:'<em>←</em>',//箭头
+            next:'<em>→</em>',//箭头
+            theme: '#FFB800',//主题颜色
+            jump:function(obj){
+              //渲染
+              document.getElementById('pageContent').innerHTML = function(){
+                var arr = [],
+                thisData = res.list.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
+                console.log(thisData);
+                layui.each(thisData,function(index,item){
+                  arr.push("<li><div class='im'><a href="+baseUrl+"/goods/index.html?id="+item.goods_id+"><img alt="+item.goods_image+" src="+baseUrl+"/upload/goods/prime/150x150/"+item.goods_image+"/></a></div><h3><a href="+baseUrl+"/goods/index.html?id="+item.goods_id+">"+item.goods_name+"</a></h3></li>")
+                });
+                return arr.join('');
+              }()
+            }
+          });
+      })
     }
   });
 })
-layui.use(['laypage', 'layer'], function(){
-  var laypage = layui.laypage
-  ,layer = layui.layer;
-  //总页数低于页码总数
-  laypage.render({
-    elem: 'demo0',
-    count: 30, //数据总数
-    limit:9,//每页条数限制
-    first:'Fist',//第一页
-    last:'Last',//最后一页
-    prev:'<em>←</em>',//箭头
-    next:'<em>→</em>',//箭头
-    theme: '#FFB800'//主题颜色
-  });
-})
+
 </script>
 </body>
 </html>
