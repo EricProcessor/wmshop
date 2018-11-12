@@ -51,6 +51,10 @@ class goods_model extends Model
         (
           //  'is_decimal' => array(TRUE, '重量格式不正确'),
         ),
+        'sort'=>array
+        (
+              'is_decimal' => array(TRUE, '排序格式不正确'),
+        ),
     );
     
     /**
@@ -139,21 +143,121 @@ class goods_model extends Model
             $limit = $this->set_limit($limit, $total[0]['count']);
             if(isset($conditions['sort']))
             {
-                $sort_map = array('goods_id DESC', 'now_price ASC', 'now_price DESC', 'created_date DESC', 'created_date ASC');
+                $sort_map = array('goods_id DESC', 'now_price ASC', 'now_price DESC', 'created_date DESC', 'created_date ASC','sort DESC');
                 $sort = isset($sort_map[$conditions['sort']]) ? $sort_map[$conditions['sort']] : $sort_map[0];
             }
             else
             {
                 $sort = 'goods_id DESC';
             }
-            $fields = 'goods_id, cate_id, brand_id, goods_sn, goods_image,goods_content,goods_weight,stock_qty, goods_name, original_price, goods_brief, now_price, goods_image,recommend,production_ability,port,payment_term,package,moq';
+            $fields = 'goods_id, cate_id, brand_id, goods_sn, goods_image,goods_content,goods_weight,stock_qty, goods_name, original_price, goods_brief, now_price, goods_image,recommend,production_ability,port,payment_term,package,moq,sort';
             $sql = "SELECT {$fields} FROM {$this->table_name} {$where} ORDER BY {$sort} {$limit}";
+          //  $sql = "SELECT {$fields} FROM {$this->table_name} {$where} ORDER BY ".$conditions['sort']." {$limit}";
             return $this->query($sql, $binds);
         }
         
         return null;
     }
-    
+    /**
+     * 推荐商品排序
+     */
+    public function sort_goods($conditions = array(), $limit = null)
+    {
+        $where = 'WHERE status = 1';
+        $binds = array();
+        if(!empty($conditions['cate']))
+        {
+            $where .= " AND (cate_id = :cate OR cate_id IN (SELECT cate_id FROM {$GLOBALS['mysql']['MYSQL_DB_TABLE_PRE']}goods_cate WHERE parent_id = :cate))";
+            $binds[':cate'] = $conditions['cate'];
+        }
+        if(!empty($conditions['brand']))
+        {
+            $where .= ' AND brand_id = :brand';
+            $binds[':brand'] = $conditions['brand'];
+        }
+        if(!empty($conditions['newarrival']))
+        {
+            $where .= ' AND newarrival = 1';
+        }
+        if(!empty($conditions['recommend']))
+        {
+            $where .= ' AND recommend = 1';
+        }
+        if(!empty($conditions['bargain']))
+        {
+            $where .= ' AND bargain = 1';
+        }
+        if(!empty($conditions['minpri']))
+        {
+            $where .= ' AND now_price >= :minpri';
+            $binds[':minpri'] = $conditions['minpri'];
+        }
+        if(!empty($conditions['maxpri']))
+        {
+            $where .= ' AND now_price <= :maxpri';
+            $binds[':maxpri'] = $conditions['maxpri'];
+        }
+        if(isset($conditions['kw']) && $conditions['kw'] != '')
+        {
+            $conditions['kw'] = sql_escape($conditions['kw']);
+            if($GLOBALS['cfg']['goods_fulltext_query'] == 1)
+            {
+                $where .= ' AND MATCH (goods_name,meta_keywords) AGAINST (:kw IN BOOLEAN MODE)';
+                $binds[':kw'] = $conditions['kw'];
+            }
+            else
+            {
+                $where .= ' AND (goods_name LIKE :inskw OR LOCATE(:kw, meta_keywords))';
+                $binds[':inskw'] = '%'.$conditions['kw'].'%';
+                $binds[':kw'] = $conditions['kw'];
+            }
+
+        }
+        if(!empty($conditions['att']))
+        {
+            $att = explode('@', urldecode($conditions['att']));
+            $newatt = array();
+            foreach($att as $v) if(!empty($v)) $newatt[substr($v, 0, strpos($v, '_'))] = substr($v, strpos($v, '_') + 1);
+            $goods_attr_model = new goods_attr_model();
+            $relax_atids = array();
+            foreach($newatt as $k => $v)
+            {
+                if($gatids = $goods_attr_model->find_all(array('attr_id' => $k, 'value' => $v), null, 'goods_id'))
+                {
+                    foreach($gatids as $v) $relax_atids[$k][] = $v['goods_id'];
+                }
+                else
+                {
+                    $relax_atids[$k] = array();
+                }
+            }
+            sort($relax_atids);
+            $strict_atids = mult_array_intersect($relax_atids);
+            $strict_atids = $strict_atids === FALSE ? $relax_atids[0] : $strict_atids;
+            $attr_ids = !empty($strict_atids) ? implode(',', $strict_atids) : 0;
+            $where .= " AND goods_id IN ({$attr_ids})";
+        }
+
+        $total = $this->query("SELECT COUNT(*) as count FROM {$this->table_name} {$where}", $binds);
+        if($total[0]['count'] > 0)
+        {
+            $limit = $this->set_limit($limit, $total[0]['count']);
+            if(isset($conditions['sort']))
+            {
+                $sort_map = array('goods_id DESC', 'now_price ASC', 'now_price DESC', 'created_date DESC', 'created_date ASC','sort DESC');
+                $sort = isset($sort_map[$conditions['sort']]) ? $sort_map[$conditions['sort']] : $sort_map[0];
+            }
+            else
+            {
+                $sort = 'goods_id DESC';
+            }
+            $fields = 'goods_id, cate_id, brand_id, goods_sn, goods_image,goods_content,goods_weight,stock_qty, goods_name, original_price, goods_brief, now_price, goods_image,recommend,production_ability,port,payment_term,package,moq,sort';
+            $sql = "SELECT {$fields} FROM {$this->table_name} {$where} ORDER BY ".$conditions['sort']." DESC{$limit}";
+            return $this->query($sql, $binds);
+        }
+
+        return null;
+    }
     public function set_search_filters($conditions)
     {
         $filters = $binds = array();
