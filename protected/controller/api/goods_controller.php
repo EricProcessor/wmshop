@@ -47,32 +47,20 @@ class goods_controller extends general_controller
             echo json_encode(array('status' => 'nodata'));
         }
     }
+    // 推荐排序查询
     function action_pages(){
-//        // 接收页码参数
-//        $page = (int)request("p", 1);
-//
-//        // 实例化一个guestbook的模型类
-//        $goods_model = new goods_model();
-//        // 用findAll()方法查询guestbook表的全部数据
-//        $this->records = $goods_model->find_all("recommend = 1", "", "*", array($page, 9));
-//        // 输出看看
-//         dump($this->records);
-//
-//        $this->pager = $goods_model->page;
-//        // dump($this->pager);
-//        //echo json_encode()
-//       // $this->display("guestbook.html");
+
         $conditions = array
         (
             'recommend' => 1,
 
+            'sort'=> 'sort'
         );
 
         $goods_model = new goods_model();
-        if($list = $goods_model->find_goods($conditions, array(request('page', 1), request('pernum', '100'))))
+        if($list = $goods_model->sort_goods($conditions, array(request('page', 1), request('pernum', '500'))))
         {
-
-            echo json_encode(array('status' => 'success', 'total' => $goods_model->find_count($conditions),'list' => $list, 'paging' => $goods_model->page));
+            echo json_encode(array('sort'=>$conditions['sort'], 'status' => 'success', 'total' => $goods_model->find_count($conditions),'list' => $list, 'paging' => $goods_model->page));
         }
         else
         {

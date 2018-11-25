@@ -96,8 +96,8 @@ function pageturn(page_id){searchRes(page_id);}
     <th width="60" colspan="2">编号</th>
     <th class="ta-l">商品名称</th>
     <th width="150">货号</th>
-    <th width="130">价格 <font class='c999'>(元)</font></th>
-    <th width="100">库存</th>
+    <th width="130">排序</th>
+    <!--<th width="100">库存</th>-->
     <th width="100">状态</th>
     <th width="100">创建时间</th>
   </tr>
@@ -112,8 +112,8 @@ function pageturn(page_id){searchRes(page_id);}
       {@if v.bargain == 1}<span class="sign">特价</span>{@/if}
     </td>
     <td>${v.goods_sn}</td>
-    <td class="red">${v.now_price}</td>
-    <td>${v.stock_qty}</td>
+    <td >${v.sort}</td>
+    <!--<td>${v.stock_qty}</td>-->
     <td>{@if v.status == 1}<font class="green">上架</font>{@else}<font class="red">下架</font>{@/if}</td>
     <td class="c888">$${v.created_date|format_date}</td>
   </tr>

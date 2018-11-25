@@ -112,6 +112,10 @@ function submitForm(){
                 <th>MOQ</th>
                 <td><input class="w200 txt" name="moq" type="text" /><p class="c999 mt10"></p></td>
             </tr>
+          <tr>
+            <th>推荐排序</th>
+            <td><input class="w200 txt" name="sort" type="text" /><p class="c999 mt10">数值可填写从0到10000，数值越大，越靠前</p></td>
+          </tr>
           <tr style="display: none">
             <th>当前售价</th>
             <td><input class="w200 txt" name="now_price" id="now_price" type="text" value="1.00" /><p class="c999 mt10">售价请按此格式填写, 如: "188.00" 或 "8.00"</p></td>
@@ -319,6 +323,10 @@ function submitForm(){
           <tr>
             <th>MOQ</th>
             <td><input class="w200 txt" name="moq" type="text" value="<{$rs.moq}>"/><p class="c999 mt10"></p></td>
+          </tr>
+          <tr>
+            <th>推荐排序</th>
+            <td><input class="w200 txt" name="sort" type="text" value="<{$rs.sort}>" /><p class="c999 mt10">数值可填写从0到10000，数值越大，越靠前</p></td>
           </tr>
           <tr style="display:none">
             <th>当前售价</th>

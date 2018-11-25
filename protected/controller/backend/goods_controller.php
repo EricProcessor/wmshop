@@ -45,7 +45,7 @@ class goods_controller extends general_controller
             $total = $goods_model->query("SELECT COUNT(*) as count FROM {$goods_model->table_name} {$where}", $binds);
             if($total[0]['count'] > 0)
             {
-                $fields = 'goods_id, goods_name, goods_sn, now_price, stock_qty, created_date, newarrival, recommend, bargain, status';
+                $fields = 'goods_id, goods_name, goods_sn, now_price, stock_qty, created_date, newarrival, recommend, bargain, status,sort';
                 $limit = $goods_model->set_limit(array(request('page', 1), request('pernum', 10)), $total[0]['count']);
                 
                 $sort_id = request('sort_id', 0, 'post');
@@ -104,6 +104,7 @@ class goods_controller extends general_controller
                 'payment_term'=>trim(request('payment_term','')),
                 'package'=>trim(request('package','')),
                 'moq'=>trim(request('moq','')),
+                'sort'=>trim(request('sort','')),
                 'meta_keywords' => trim(str_replace('，', ',', request('meta_keywords', ''))),
                 'meta_description' => trim(request('meta_description', '')),
                 'created_date' => $_SERVER['REQUEST_TIME'],
@@ -179,6 +180,7 @@ class goods_controller extends general_controller
                     'payment_term'=>trim(request('payment_term','')),
                     'package'=>trim(request('package','')),
                     'moq'=>trim(request('moq','')),
+                    'sort'=>trim(request('sort','')),
                     'meta_keywords' => trim(str_replace('，', ',', request('meta_keywords', ''))),
                     'meta_description' => trim(request('meta_description', '')),
                     'created_date' => $_SERVER['REQUEST_TIME'],
