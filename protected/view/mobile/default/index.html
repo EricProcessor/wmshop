@@ -8,8 +8,10 @@
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/general.css" />
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/iconfont/iconfont.css">
 <link rel="stylesheet" type="text/css" href="<{$common.theme}>/css/index.css" />
+<link rel="stylesheet" type="text/css" href="<{$common.theme}>/layui/css/layui.css" />
 <script type="text/javascript" src="<{$common.theme}>/js/zepto.min.js"></script>
 <script type="text/javascript" src="<{$common.theme}>/js/verydows.mobile.js"></script>
+<script type="text/javascript" src="<{$common.theme}>/layui/layui.all.js"></script>
 <style>
   .llh-probox{
     display: inline-block;
@@ -53,34 +55,20 @@ function outSearch(){
   <{layout_adv id='7'}>
   <!-- banner end -->
 
-  <!-- newarrival start -->
-  <div class="lateral mt8">
-    <div class="th">
-      <h2><i class="icon"></i><font>New arrival</font></h2>
-    </div>
-    <{if !empty($newarrival)}>
-    <div class="">
-      <div class="" id="">
-        <ul>
-          <{foreach $newarrival as $v}>
-          <li class="llh-probox">
-            <div class=""><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/150x150/<{$v.goods_image}>" /></a></div>
-            <h3><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name, 40)}></a></h3>
-            <!-- <p class="price"><i>¥</i><{$v.now_price}></p> -->
-          </li>
-          <{/foreach}>
-        </ul>
-        <div class="clearfix"></div>
-        <div class="trigger mt5"></div>
-      </div>
-    </div>
-    <{/if}>
-  </div>
+
+
   <!-- newarrival end -->
   <!-- recommend start -->
+<div class="layui-carousel" id="test1" lay-filter="test1">
+  <div carousel-item="">
+    <div> <img  src="<{$common.theme}>/images/banner1.jpg" alt=""> </div>
+    <div> <img src="<{$common.theme}>/images/banner2.jpg" alt=""> </div>
+    <div> <img src="<{$common.theme}>/images/banner3.jpg" alt=""> </div>
+  </div>
+</div> 
   <div class="lateral mt8">
     <div class="th">
-      <h2><i class="icon"></i><font>Recommend</font></h2>
+      <h2><i class="icon"></i><font>Hot Sale</font></h2>
     </div>
     <{if !empty($recommend)}>
     <div class="">
@@ -102,28 +90,6 @@ function outSearch(){
   </div>
   <!-- recommend end -->
   <!-- bargain start -->
-  <div class="lateral mt8">
-    <div class="th">
-      <h2><i class="icon"></i><font>Special sale promotion</font></h2>
-    </div>
-    <{if !empty($bargain)}>
-    <div class="">
-      <div class="" id="bargain">
-        <ul>
-          <{foreach $bargain as $v}>
-          <li class="llh-probox">
-            <div class=""><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><img alt="<{$v.goods_name}>" src="<{$common.baseurl}>/upload/goods/prime/150x150/<{$v.goods_image}>" /></a></div>
-            <h3><a href="<{url c='mobile/goods' a='index' id=$v.goods_id}>"><{truncate($v.goods_name, 40)}></a></h3>
-            <!-- <p class="price"><i>¥</i><{$v.now_price}></p> -->
-          </li>
-          <{/foreach}>
-        </ul>
-        <div class="clearfix"></div>
-        <div class="trigger mt5"></div>
-      </div>
-    </div>
-    <{/if}>
-  </div>
   <!-- bargain end -->
   <!-- footer start -->
   <div class="footer mt8">
@@ -150,6 +116,55 @@ function outSearch(){
   <a href="<{url c='mobile/main' a='contactus'}>"><i class="iconfont">&#xe60b;</i><span>Contact Us</span></a>
 </div>
 <script type="text/javascript" src="<{$common.baseurl}>/public/script/juicer.js"></script>
+<script>
+  layui.use(['carousel', 'form'], function(){
+  var carousel = layui.carousel
+  ,form = layui.form;
+  
+  //常规轮播
+  carousel.render({
+    elem: '#test1'
+    // ,arrow: 'always'
+    ,height: '110px'
+    ,width: '100%'
+  });
+  
+  
+  var $ = layui.$, active = {
+    set: function(othis){
+      var THIS = 'layui-bg-normal'
+      ,key = othis.data('key')
+      ,options = {};
+      
+      othis.css('background-color', '#5FB878').siblings().removeAttr('style'); 
+      options[key] = othis.data('value');
+      ins3.reload(options);
+    }
+  };
+  
+  //监听开关
+  form.on('switch(autoplay)', function(){
+    ins3.reload({
+      autoplay: this.checked
+    });
+  });
+  
+  $('.demoSet').on('keyup', function(){
+    var value = this.value
+    ,options = {};
+    if(!/^\d+$/.test(value)) return;
+    
+    options[this.name] = value;
+    ins3.reload(options);
+  });
+  
+  //其它示例
+  $('.demoTest .layui-btn').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+});
+</script>
 <{include file='mobile/default/lib/footer.html'}>
 </body>
 </html>
