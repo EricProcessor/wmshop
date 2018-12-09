@@ -40,7 +40,7 @@
 /* category */
 .catewrap {background:#fff;}
 .cate-top {float:left;width:29%;background:#f6f6f6;}
-.cate-top a {display:block;height:60px;line-height:60px;padding:0 10px;font-size:14px;color:#555;border:1px solid #ddd;border-width:0 1px 1px 0;}
+.cate-top a {display:block;line-height:30px;padding:0 10px;font-size:14px;color:#555;border:1px solid #ddd;border-width:0 1px 1px 0;}
 .cate-top a.cur {color:#45a1de;font-weight:bold;background:#fff;border-right:0;border-left:2px solid #45a1de}
 .cate-sub {margin-left:30%;padding:15px 5px 15px 15px;background:#fff;}
 .cate-sub dl {display:none;}
